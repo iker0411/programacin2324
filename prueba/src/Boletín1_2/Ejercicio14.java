@@ -6,6 +6,11 @@ public class Ejercicio14 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Digame un número");
+        /*
+         Siempre cuando pongamos una variable (num) ponemos
+        nexInt y para que no pase a la siguiente variable sin leer lo que ponemos
+         (num), ponemos nextLine.
+         */
         int num1 = teclado.nextInt();
         teclado.nextLine();
         System.out.println("Digame un segundo número");
