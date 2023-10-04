@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/ejercicio6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,33 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Ejercicio2">
-    <configuration name="Do_while" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Do_while" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Boletin1_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejecicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejecicio1" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Ejercicio7">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio2" />
       <module name="prueba" />
@@ -84,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="buclewhile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletin1_2.buclewhile" />
+    <configuration name="Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio4" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Boletin1_2.*" />
+          <option name="PATTERN" value="Bolein1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,20 +74,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="publi_saludar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="publi_saludar" />
+    <configuration name="Ejercicio5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio5" />
       <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio7" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejercicio6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.ejercicio6" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio7" />
+        <item itemvalue="Application.ejercicio6" />
+        <item itemvalue="Application.Ejercicio5" />
+        <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio2" />
-        <item itemvalue="Application.Ejecicio1" />
-        <item itemvalue="Application.publi_saludar" />
-        <item itemvalue="Application.Do_while" />
-        <item itemvalue="Application.buclewhile" />
       </list>
     </recent_temporary>
   </component>
@@ -124,5 +133,21 @@
       <updated>1695298739963</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Bolein1_1/Ejercicio3.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Bolein1_1/Ejercicio5.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
