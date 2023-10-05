@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10_Mody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejericicio9_Mo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
-  <component name="RunManager" selected="Application.Ejercicio9">
-    <configuration name="Ejercicio5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio5" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Bolein1_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Ejercicio4">
+    <configuration name="Ejecicio10_Mody" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejecicio10_Mody" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
@@ -59,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio7" />
+    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio1" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletin1_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio8" />
+    <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio2" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletin1_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejercicio9" />
+    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio3" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletin1_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ejercicio6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.ejercicio6" />
+    <configuration name="Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio4" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletin1_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ejercicio9" />
-        <item itemvalue="Application.Ejercicio8" />
-        <item itemvalue="Application.Ejercicio7" />
-        <item itemvalue="Application.ejercicio6" />
-        <item itemvalue="Application.Ejercicio5" />
+        <item itemvalue="Application.Ejercicio4" />
+        <item itemvalue="Application.Ejercicio3" />
+        <item itemvalue="Application.Ejercicio2" />
+        <item itemvalue="Application.Ejercicio1" />
+        <item itemvalue="Application.Ejecicio10_Mody" />
       </list>
     </recent_temporary>
   </component>
@@ -131,21 +141,5 @@
       <updated>1695298739963</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bolein1_1/Ejercicio3.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bolein1_1/Ejercicio5.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
