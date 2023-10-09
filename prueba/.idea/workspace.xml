@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10_Mody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejericicio9_Mo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin1_2/Ejercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio1_modyfi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio2Recursivo_fibonacci.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,27 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Bolein1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio4">
-    <configuration name="Ejecicio10_Mody" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.Ejecicio10_Mody" />
+  <component name="RunManager" selected="Application.Boletinextra.Ejercicio2">
+    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletinextra.Ejercicio1" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletinextra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio1" />
+    <configuration name="Ejercicio1_modyfi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boletinextra.Ejercicio1_modyfi" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Boletin1_2.*" />
+          <option name="PATTERN" value="Boletinextra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,11 +79,11 @@
       </method>
     </configuration>
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio2" />
+      <option name="MAIN_CLASS_NAME" value="Boletinextra.Ejercicio2" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Boletin1_2.*" />
+          <option name="PATTERN" value="Boletinextra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boletinextra.Ejercicio2" />
+        <item itemvalue="Application.Ejercicio1_modyfi" />
+        <item itemvalue="Application.Boletinextra.Ejercicio1" />
         <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio3" />
-        <item itemvalue="Application.Ejercicio2" />
-        <item itemvalue="Application.Ejercicio1" />
-        <item itemvalue="Application.Ejecicio10_Mody" />
       </list>
     </recent_temporary>
   </component>
