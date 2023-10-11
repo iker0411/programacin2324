@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio1_modyfi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletinextra/Ejercicio2Recursivo_fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/EJERCICIO4_RELACION_DE_PROBLEMAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio7_Relacion_de_problemas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio8Relaciondeproblemas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/MientradaSalida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Postivo_negativo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,13 +52,13 @@
       <recent name="Bolein1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boletinextra.Ejercicio2">
-    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletinextra.Ejercicio1" />
+  <component name="RunManager" selected="Application.EJERCICIO4_RELACION_DE_PROBLEMAS">
+    <configuration name="EJERCICIO4_RELACION_DE_PROBLEMAS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bolein1_1.EJERCICIO4_RELACION_DE_PROBLEMAS" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Boletinextra.*" />
+          <option name="PATTERN" value="Bolein1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,9 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Boletinextra.Ejercicio2" />
+        <item itemvalue="Application.EJERCICIO4_RELACION_DE_PROBLEMAS" />
         <item itemvalue="Application.Ejercicio1_modyfi" />
-        <item itemvalue="Application.Boletinextra.Ejercicio1" />
         <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio3" />
       </list>
