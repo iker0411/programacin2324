@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/EJERCICIO4_RELACION_DE_PROBLEMAS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio7_Relacion_de_problemas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio8Relaciondeproblemas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/MientradaSalida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bolein1_1/Postivo_negativo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin1_6/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boletin1_4/Ejercicio10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boletin1_4/Ejercicio9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/EJERCICIO4_RELACION_DE_PROBLEMAS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/EJERCICIO4_RELACION_DE_PROBLEMAS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejecicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejecicio10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejecicio10_Mody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejecicio10_Mody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio7_Relacion_de_problemas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio7_Relacion_de_problemas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio8Relaciondeproblemas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio8Relaciondeproblemas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejercicio9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejercicio9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Ejericicio9_Mo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Ejericicio9_Mo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/MientradaSalida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/MientradaSalida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/Postivo_negativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/Postivo_negativo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolein1_1/ejercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/ejercicio6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -52,13 +70,26 @@
       <recent name="Bolein1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EJERCICIO4_RELACION_DE_PROBLEMAS">
+  <component name="RunManager" selected="Application.Ejercicio2">
     <configuration name="EJERCICIO4_RELACION_DE_PROBLEMAS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bolein1_1.EJERCICIO4_RELACION_DE_PROBLEMAS" />
+      <option name="MAIN_CLASS_NAME" value="Boletin1_1.EJERCICIO4_RELACION_DE_PROBLEMAS" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bolein1_1.*" />
+          <option name="PATTERN" value="Boletin1_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boletin1_4.Ejercicio10" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boletin1_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,24 +111,11 @@
       </method>
     </configuration>
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletinextra.Ejercicio2" />
+      <option name="MAIN_CLASS_NAME" value="Boletin1_6.Ejercicio2" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Boletinextra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boletin1_2.Ejercicio3" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Boletin1_2.*" />
+          <option name="PATTERN" value="Boletin1_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,10 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio2" />
+        <item itemvalue="Application.Ejercicio10" />
         <item itemvalue="Application.EJERCICIO4_RELACION_DE_PROBLEMAS" />
         <item itemvalue="Application.Ejercicio1_modyfi" />
         <item itemvalue="Application.Ejercicio4" />
-        <item itemvalue="Application.Ejercicio3" />
       </list>
     </recent_temporary>
   </component>

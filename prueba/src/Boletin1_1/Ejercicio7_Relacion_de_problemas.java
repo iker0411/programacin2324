@@ -1,8 +1,4 @@
-package Bolein1_1;
-
-import org.xml.sax.SAXNotRecognizedException;
-
-import java.util.Scanner;
+package Boletin1_1;
 
 public class Ejercicio7_Relacion_de_problemas {
 

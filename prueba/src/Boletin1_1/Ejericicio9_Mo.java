@@ -1,6 +1,4 @@
-package Bolein1_1;
-
-import java.util.Scanner;
+package Boletin1_1;
 
 public class Ejericicio9_Mo {
     public static void main(String[] args) {
