@@ -5,50 +5,61 @@ import java.util.Scanner;
 public class MientradaSalida {
     public static Scanner sc = new Scanner(System.in);
 
-
     /**
-     * lee un entero comprendido entre el mínimo y el máximo (incluidos)
-     * @param min valor mínimo aceptado
-     * @param max valor máximo aceptado
-     * @return El número leido
+     * Lee un entero comprendido entre el minimo y el máximo (incluidos)
+     *
+     * @param min Valor minimo aceptado
+     * @param max Valor máximo aceptado
+     * @return numero leido
      */
-    public static  int positi(String mensaje, int po, int ent){
-        System.out.println(mensaje + ": ");
-        int numLeido;
-        do{
-            numLeido = Integer.parseInt(sc.nextLine());
-            if (numLeido<0);
-               System.out.println("Introduce un nuevo número positivo");
-        }while (numLeido<0);
-        return numLeido;
+    public static int leerEnteroDeRango(String mensaje, int min, int max) {
+        if (min >= max) {
+            // TODO: Hacer cuando conozcas las excepxiones
+        }
 
+        System.out.printf(mensaje + ": ");
+        int numeroLeido;
+        do {
+            numeroLeido = Integer.parseInt(sc.nextLine());
+            if (numeroLeido < min || numeroLeido > max) {
+                System.out.println("Por favor, introduce un valor entre %d y ");
+            }
+
+        } while (numeroLeido < min || numeroLeido > max);
+
+        return numeroLeido;
     }
-   /* public static char LeerSN(String mensaje){
-        //todo:Controlas excepciones
-        System.out.println(mensaje + ": ");
+
+    public static int leerEntero(String mensaje) {
+
+        System.out.printf(mensaje + ": ");
+        int num = Integer.parseInt(sc.next());
+        //TODO controlar excepcion
+
+        return num;
+    }
+
+    public static int leerEnteroPositivo(String mensaje) {
+        int numPo;
+        do {
+            System.out.printf(mensaje + ": ");
+            numPo = Integer.parseInt(sc.next());
+            if (numPo < 0) {
+                System.out.println("Debe ser un número positivo");
+            }
+
+        } while (numPo < 0);
+        return numPo;
+    }
+    public static char SiONo (String mensaje){
+        //TODO: Controlar excepciones
+        System.out.printf(mensaje + ": ");
         char sn;
         do {
-         sn = sc.nextLine().charAt(0);
-        }while (sn);
-    }*/
-    public static  int leerEnteroDeRango(String mensaje, int min, int max) {
-        System.out.printf(mensaje + ": ");
-        if (min >= max) {
-            //TODO:Hacer cuando conozccamos las excepciones
-
-        }
-        System.out.println(mensaje + ": ");
-        int numeroleido;
-        do {
-             numeroleido = Integer.parseInt(sc.nextLine());
-             if (numeroleido < min || numeroleido > max){
-                 System.out.printf("Por favor, introduce un valor entre %d y %d:", min, max);
-             }
-        }while (numeroleido < min || numeroleido > max);
-        return numeroleido;
+            sn = sc.nextLine().toUpperCase().charAt(0);
+        }while (sn != 's' && sn != 'S' && sn != 'n' && sn != 'N' );
+        return sn;
 
     }
-    public static void cerrarScanner(){
 
-    }
 }
