@@ -15,7 +15,20 @@ public class Ejercicio8 {
 
         result = (b * b) - 4 * a * c;
 
-    }
+        if (a== 0){
+            System.out.println("La ecuación es de primer grado asi que se soluconara de otra forma");
+
+        }else {
+            if (result == 0){
+                System.out.println("La ecuación tiene solamente una solución");
+            } else if (result > 0) {
+                System.out.println("La ecuación tiene dos solución");
+            } else {
+                System.out.println("La ecuación no tiene solución");
+            }
+        }
 
     }
+
+}
 
