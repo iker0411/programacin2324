@@ -1,6 +1,5 @@
 package Tema2;
 
-import java.util.Arrays;
 
 public class Ejercicio7 {
     public static void main(String[] args) {
