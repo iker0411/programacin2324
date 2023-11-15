@@ -33,7 +33,7 @@ public class MientradaSalida {
     public static int leerEntero(String mensaje) {
 
         System.out.printf(mensaje + ": ");
-        int num = Integer.parseInt(sc.next());
+        int num = Integer.parseInt(sc.nextLine());
         //TODO controlar excepcion
 
         return num;
@@ -43,7 +43,7 @@ public class MientradaSalida {
         int numPo;
         do {
             System.out.printf(mensaje + ": ");
-            numPo = Integer.parseInt(sc.next());
+            numPo = Integer.parseInt(sc.nextLine());
             if (numPo < 0) {
                 System.out.println("Debe ser un número positivo");
             }
