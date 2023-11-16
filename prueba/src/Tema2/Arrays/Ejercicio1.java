@@ -1,4 +1,4 @@
-package Tema2;
+package Tema2.Arrays;
 
 public class Ejercicio1 {
     public static void main(String[] args) {

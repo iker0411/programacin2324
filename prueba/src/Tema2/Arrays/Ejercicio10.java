@@ -1,4 +1,4 @@
-package Tema2;
+package Tema2.Arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package Tema2;
+package Tema2.Arrays;
 
 import Boletin1_1.MientradaSalida;
 

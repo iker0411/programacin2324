@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tema2/Ejercicio14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema2/pila_Eje13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema2/Matrices/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema2/Matrices/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema2/Matrices/Ejercicio3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boletin1_1/MientradaSalida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/MientradaSalida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Ejercicio10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Ejercicio12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/Ejercicio9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/Ejercicio9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/RecorridoArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/RecorridoArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema2/pila_Eje13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema2/Arrays/pila_Eje13.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +64,33 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Tema2" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Bolein1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.pila_Eje13">
+  <component name="RunManager" selected="Application.Ejercicio3">
+    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema2.Matrices.Ejercicio1" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema2.Matrices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ejercicio10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.Ejercicio10" />
+      <option name="MAIN_CLASS_NAME" value="Tema2.Arrays.Ejercicio10" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema2.*" />
+          <option name="PATTERN" value="Tema2.Arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.Ejercicio11" />
+    <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema2.Matrices.Ejercicio2" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema2.*" />
+          <option name="PATTERN" value="Tema2.Matrices.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,25 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.Ejercicio12" />
+    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema2.Matrices.Ejercicio3" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.Ejercicio5" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema2.*" />
+          <option name="PATTERN" value="Tema2.Matrices.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +125,11 @@
       </method>
     </configuration>
     <configuration name="pila_Eje13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.pila_Eje13" />
+      <option name="MAIN_CLASS_NAME" value="Tema2.Arrays.pila_Eje13" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema2.*" />
+          <option name="PATTERN" value="Tema2.Arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio3" />
+        <item itemvalue="Application.Ejercicio2" />
+        <item itemvalue="Application.Ejercicio1" />
         <item itemvalue="Application.pila_Eje13" />
         <item itemvalue="Application.Ejercicio10" />
-        <item itemvalue="Application.Ejercicio12" />
-        <item itemvalue="Application.Ejercicio11" />
-        <item itemvalue="Application.Ejercicio5" />
       </list>
     </recent_temporary>
   </component>
