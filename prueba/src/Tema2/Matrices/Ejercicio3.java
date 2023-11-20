@@ -11,6 +11,6 @@ public class Ejercicio3 {
                 System.out.print(a[i][j] + " ");
             }
         }
-
+        System.out.println();
     }
 }
