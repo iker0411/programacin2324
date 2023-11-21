@@ -4,25 +4,47 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class Ejercicio10 {
+    public static void main(String[] args) {
+        int[] arrayOriginal = {1, 2, 1, 4, 5, 2};
+        int[] nuevoArray = obtenerNoRepetidos(arrayOriginal);
 
 
-  /*  public static void main(String[] args) {
-        int[] array1 = {1,8,3,6,9,2};
-        int[] array2 = {1,4,9,7,5};
-        int noRepetidos = 0;
+        System.out.println("Array Original: ");
+        for (int elemento : arrayOriginal) {
+            System.out.print(elemento + " ");
+        }
+        System.out.println("\nNuevo Array sin elementos repetidos: ");
+        for (int elemento : nuevoArray) {
+            System.out.print(elemento + " ");
+        }
+    }
 
-        for (int i = 0 ; i < array1.length; i++){
-            boolean repetido = false;
+    public static int[] obtenerNoRepetidos(int[] array) {
+        int[] nuevoArray = new int[array.length];
+        int nuevoIndice = 0;
+        boolean repetido;
 
-            for (int j = 0; j < noRepetidos && !repetido; j++){
-                if (array1[i] == array2[j]) {
+        for (int i = 0; i < array.length; i++) {
+            repetido = false;
+
+            for (int j = 0; j < nuevoIndice; j++) {
+                if (array[i] == nuevoArray[j]) {
                     repetido = true;
+                    break;
                 }
             }
+
+            if (!repetido) {
+                nuevoArray[nuevoIndice] = array[i];
+                nuevoIndice++;
+            }
         }
-        if (!repetido){
-            array2[noRepetidos++] =  array1[i];
-        }
-    }*/
+
+        int[] resultado = new int[nuevoIndice];
+        System.arraycopy(nuevoArray, 0, resultado, 0, nuevoIndice);
+
+        return resultado;
+    }
 }
+
 
