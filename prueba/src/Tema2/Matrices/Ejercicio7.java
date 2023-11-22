@@ -12,9 +12,11 @@ public class Ejercicio7 {
             }
     }
     public static boolean dos (int [][]a, int [][]b){
-        boolean dos = false;
+        boolean dos = a.length==b.length;
         for (int i = 0; i < a.length; i++){
+            dos = a[i].length == b[i].length;
             for (int j = 0; j < b.length; j ++){
+             dos = a[i][j] == b[i][j];
             }
         }
         return dos;
