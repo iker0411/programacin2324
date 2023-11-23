@@ -4,13 +4,28 @@ public class PrincipalAlumnos {
     public static final char OCULTO = '#';
 
 
+
+
     public static void main(String[] args) {
+
+        char[][] matrizVi = {
+                {'A','B','C','D'},
+                {'E','F','G','H'},
+                {'A','B','C','D'},
+                {'E','F','G','H'}
+        };
+        char[][] matrizOC = {
+                {'#','#','#','#'},
+                {'#','#','#','#'},
+                {'#','#','#','#'},
+                {'#','#','#','#'}
+        };
 
         /*
         matrizVisible es una matriz de booleanos que nos servirá para saber si una celda está visible u oculta.
         Por defecto, todas las celdas estarán ocultas, por lo que inicializamos la matriz a false.
          */
-        ocultarTodaLaMatriz(matrizVisible);
+        ocultarTodaLaMatriz(matrizVi);
 
 
         /*
@@ -27,7 +42,7 @@ public class PrincipalAlumnos {
         // TODO: Aplicar la lógica descrita del juego
 
 
-        if (checkFinished(matrizVisible)){
+        if (checkFinished(matrizVi)){
             System.out.println("¡Enhorabuena! Has ganado");
         }
         else {
@@ -40,7 +55,11 @@ public class PrincipalAlumnos {
      * @param matriz
      */
     private static void printMatrix(char[][] matriz) {
-
+        for(int i = 0; i < matriz.length; i++){
+            for (int j = 0; j < matriz[0].length; j++){
+                System.out.print(matriz[i][j] + " ");
+            }
+        }
     }
 
     /**
@@ -48,8 +67,13 @@ public class PrincipalAlumnos {
      * @param matriz
      * @param matrizVisible
      */
-    private static void printVisibleMatrix(char[][] matriz, boolean[][] matrizVisible) {
-
+    private static void printVisibleMatrix(char[][] matriz, char[][] matrizVi) {
+        for(int i = 0; i < matriz.length; i++){
+            for (int j = 0; j < matriz[0].length; j++){
+                System.out.print(matriz[i][j] + " ");
+                mar
+            }
+        }
     }
 
 
@@ -74,7 +98,7 @@ public class PrincipalAlumnos {
      * Hace que todas las celdas de la matriz sean false (ocultas)
      * @param matrizVisible
      */
-    private static void ocultarTodaLaMatriz(boolean[][] matrizVisible) {
+    private static void ocultarTodaLaMatriz(char[][] matrizVisible) {
 
     }
 
@@ -83,7 +107,7 @@ public class PrincipalAlumnos {
      * @param matrizVisible
      * @return
      */
-    private static boolean checkFinished(boolean[][] matrizVisible) {
+    private static boolean checkFinished(char[][] matrizVisible) {
 
     }
 
