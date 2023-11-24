@@ -8,18 +8,8 @@ public class PrincipalAlumnos {
 
     public static void main(String[] args) {
 
-        char[][] matrizVi = {
-                {'A','B','C','D'},
-                {'E','F','G','H'},
-                {'A','B','C','D'},
-                {'E','F','G','H'}
-        };
-        char[][] matrizOC = {
-                {'#','#','#','#'},
-                {'#','#','#','#'},
-                {'#','#','#','#'},
-                {'#','#','#','#'}
-        };
+        char[][] matriz = new char[TAM][TAM];
+        boolean[][] matrizVisible = new boolean[TAM][TAM];
 
         /*
         matrizVisible es una matriz de booleanos que nos servirá para saber si una celda está visible u oculta.
@@ -59,6 +49,7 @@ public class PrincipalAlumnos {
             for (int j = 0; j < matriz[0].length; j++){
                 System.out.print(matriz[i][j] + " ");
             }
+            System.out.println();
         }
     }
 
@@ -71,7 +62,7 @@ public class PrincipalAlumnos {
         for(int i = 0; i < matriz.length; i++){
             for (int j = 0; j < matriz[0].length; j++){
                 System.out.print(matriz[i][j] + " ");
-                mar
+
             }
         }
     }
