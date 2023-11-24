@@ -4,28 +4,16 @@ public class PrincipalAlumnos {
     public static final char OCULTO = '#';
 
 
-
-
     public static void main(String[] args) {
 
-        char[][] matrizVi = {
-                {'A','B','C','D'},
-                {'E','F','G','H'},
-                {'A','B','C','D'},
-                {'E','F','G','H'}
-        };
-        char[][] matrizOC = {
-                {'#','#','#','#'},
-                {'#','#','#','#'},
-                {'#','#','#','#'},
-                {'#','#','#','#'}
-        };
+        char[][] matriz = new char[TAM][TAM];
+        boolean[][] matrizVisible = new boolean[TAM][TAM];
 
         /*
         matrizVisible es una matriz de booleanos que nos servirá para saber si una celda está visible u oculta.
         Por defecto, todas las celdas estarán ocultas, por lo que inicializamos la matriz a false.
          */
-        ocultarTodaLaMatriz(matrizVi);
+        ocultarTodaLaMatriz(matrizVisible);
 
 
         /*
@@ -42,7 +30,7 @@ public class PrincipalAlumnos {
         // TODO: Aplicar la lógica descrita del juego
 
 
-        if (checkFinished(matrizVi)){
+        if (checkFinished(matrizVisible)){
             System.out.println("¡Enhorabuena! Has ganado");
         }
         else {
@@ -67,11 +55,15 @@ public class PrincipalAlumnos {
      * @param matriz
      * @param matrizVisible
      */
-    private static void printVisibleMatrix(char[][] matriz, char[][] matrizVi) {
+    private static void printVisibleMatrix(char[][] matriz, boolean[][] matrizVisible) {
+        boolean matrizOc = true;
         for(int i = 0; i < matriz.length; i++){
             for (int j = 0; j < matriz[0].length; j++){
-                System.out.print(matriz[i][j] + " ");
-                mar
+                if (matrizVisible[i][j]) {
+                    System.out.println(matriz[i][j]);
+                }else {
+                    System.out.println(OCULTO);
+                }
             }
         }
     }
