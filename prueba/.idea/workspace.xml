@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../matricesMemoria/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../matricesMemoria/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+>>>>>>> 4f93eec6e1f12b5a4fcc0ddd36f8c9519ec88dab
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/ikerM/Documents/programacioncasa/matricesMemoria",
+=======
+    "last_opened_file_path": "C:/Users/Alumno/Desktop/programación/matricesMemoria",
+>>>>>>> 4f93eec6e1f12b5a4fcc0ddd36f8c9519ec88dab
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
