@@ -1,15 +1,17 @@
 import java.util.Random;
 
 public class PrincipalAlumnos {
-    public static final int TAM = 4;
+    public static int TAM ;
     public static final int INTENTOS = 5;
     public static final char OCULTO = '#';
 
 
     public static void main(String[] args) {
-
+        TAM = MiEntradaSalida.leerEnteroEnRango(0, 3);// LLamar al metodo Leer entero de rango, que se encuentra dentro de mi archivo entrada y salida
+        TAM = MiEntradaSalida.leerEnteroEnRango(0, 3);// LLamar al metodo Leer entero de rango, que se encuentra dentro de mi archivo entrada y salida
         char[][] matriz = new char[TAM][TAM];
         boolean[][] matrizVisible = new boolean[TAM][TAM];
+
 
         /*
         matrizVisible es una matriz de booleanos que nos servirá para saber si una celda está visible u oculta.
@@ -63,9 +65,9 @@ public class PrincipalAlumnos {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
                 if (matrizVisible[i][j]) {
-                    System.out.println(matriz[i][j]);
+                    System.out.println(matriz[i][j] + " ");
                 } else {
-                    System.out.println(OCULTO);
+                    System.out.println(OCULTO + " ");
                 }
             }
         }
@@ -78,13 +80,21 @@ public class PrincipalAlumnos {
      * @param matriz
      */
     public static void fillMatrix(char[][] matriz) {
-
-        for (int i = 0; i < matriz.length; i++) {
+        int le = 65;
+        for (int i = 0; i < matriz.length /2; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-
+                matriz[i][j] = (char) le;
+                le++;
             }
         }
-
+        le = 65;
+        for (int i = matriz.length/2; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz[i][j] = (char) le;
+                le++;
+            }
+        }
+        printMatrix(matriz);
     }
 
     /**
@@ -113,7 +123,11 @@ public class PrincipalAlumnos {
      * @param matrizVisible
      */
     private static void ocultarTodaLaMatriz(boolean[][] matrizVisible) {
-
+        for (int i = 0; i < matrizVisible.length; i++) {
+            for (int j = 0; j < matrizVisible[0].length; j++) {
+               matrizVisible[i][j] = false;
+            }
+        }
     }
 
     /**
@@ -122,8 +136,16 @@ public class PrincipalAlumnos {
      * @param matrizVisible
      * @return
      */
-    private static boolean checkFinished(char[][] matrizVisible) {
-
+    private static boolean checkFinished(boolean[][] matrizVisible) {
+        boolean cendaVi = true;
+        for (int i = 0; i < matrizVisible.length; i++) {
+            for (int j = 0; j < matrizVisible[0].length; j++) {
+               if (matrizVisible[i][j] = false){
+                   cendaVi = false;
+               }
+            }
+        }
+        return cendaVi;
     }
 
 }

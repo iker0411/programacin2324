@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MiEntradaSalida {
+public class MiEntradaSalida { //
     private static Scanner scanner = new Scanner(System.in);
 
     public static char leerChar(String mensaje) {
