@@ -1,14 +1,15 @@
-import java.util.Random;
+import java.util.Scanner;
+import java.util.WeakHashMap;
 
 public class PrincipalAlumnos {
-    public static int TAM ;
+    public static final int TAM = 4;
     public static final int INTENTOS = 5;
     public static final char OCULTO = '#';
 
 
     public static void main(String[] args) {
-        TAM = MiEntradaSalida.leerEnteroEnRango(0, 3);// LLamar al metodo Leer entero de rango, que se encuentra dentro de mi archivo entrada y salida
-        TAM = MiEntradaSalida.leerEnteroEnRango(0, 3);// LLamar al metodo Leer entero de rango, que se encuentra dentro de mi archivo entrada y salida
+        Scanner sc = new Scanner(System.in);
+
         char[][] matriz = new char[TAM][TAM];
         boolean[][] matrizVisible = new boolean[TAM][TAM];
 
@@ -27,12 +28,55 @@ public class PrincipalAlumnos {
          */
 
         fillMatrix(matriz);
-        printMatrix(matriz);
         randomizeMatrix(matriz);
-        printMatrix(matriz);
-
+        int intentosRestan = INTENTOS;
         // TODO: Aplicar la lógica descrita del juego
+        while (intentosRestan > 0 && !checkFinished(matrizVisible)){
+            printVisibleMatrix( matriz, matrizVisible);
+            System.out.println("Actualemente tienes " + intentosRestan + " intentos para adivinarlo");
+            System.out.println("Dime la fila que quieras ver: (0-3) ");
+            int pfilas1 = sc.nextInt();
+            System.out.println("Dime la columna que quieres ver: (0-3) ");
+            int pcolum1 = sc.nextInt();
+            if(pfilas1 > 3 || pcolum1 > 3){
+                System.out.println("Introduce un valor que este entre el 0 y el 3");
+                intentosRestan --; //Si se pasa de la matriz te quita un intento.
+                continue;
+            }
+            if (matrizVisible[pfilas1][pcolum1]){
+                System.out.println("Esta casilla ya existe");
+            }else{
+                matrizVisible[pfilas1][pcolum1] = true;
+                printVisibleMatrix(matriz, matrizVisible);
+            }
 
+            System.out.println("Dime la fila que quieras ver: (0-3) ");
+            int pfilas2 = sc.nextInt();
+            System.out.println("Dime la columna que quieres ver: (0-3) ");
+            int pcolum2 = sc.nextInt();
+            if(pfilas2 > 3 || pcolum2 > 3){
+                System.out.println("Introduce un valor que este entre el 0 y el 3");
+                intentosRestan --;
+                continue;
+            }
+            if (matrizVisible[pfilas2][pcolum2]){
+                System.out.println("Esta casilla ya existe");
+                matrizVisible[pfilas1][pcolum1] = false;
+            }else{
+                matrizVisible[pfilas2][pcolum2] = true;
+                printVisibleMatrix(matriz, matrizVisible);
+            }
+            if (matriz[pfilas1][pcolum1] != matriz[pfilas2][pcolum2]){
+                System.out.println("No coinciden ninguna letra");
+                matrizVisible[pfilas1][pcolum1] = false;
+                matrizVisible[pfilas2][pcolum2] = false;
+                intentosRestan --;
+            }else {
+                System.out.println("Todas las letras que has introduccido coinciden");
+            }
+
+
+        }
 
         if (checkFinished(matrizVisible)) {
             System.out.println("¡Enhorabuena! Has ganado");
@@ -53,6 +97,7 @@ public class PrincipalAlumnos {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     /**
@@ -65,12 +110,14 @@ public class PrincipalAlumnos {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
                 if (matrizVisible[i][j]) {
-                    System.out.println(matriz[i][j] + " ");
+                    System.out.print(matriz[i][j] + " ");
                 } else {
-                    System.out.println(OCULTO + " ");
+                    System.out.print(OCULTO + " ");
                 }
             }
+            System.out.println();
         }
+        System.out.println();
     }
 
 
@@ -80,22 +127,19 @@ public class PrincipalAlumnos {
      * @param matriz
      */
     public static void fillMatrix(char[][] matriz) {
-        int le = 65;
-        for (int i = 0; i < matriz.length /2; i++) {
+        char le = 'A'; // le es letra
+        for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j] = (char) le;
+                matriz[i][j]=le;
                 le++;
+                if (le > 'A' + TAM * TAM /2){
+                    le='A';
+                }
             }
         }
-        le = 65;
-        for (int i = matriz.length/2; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j] = (char) le;
-                le++;
-            }
-        }
-        printMatrix(matriz);
+
     }
+
 
     /**
      * Desordena la matriz
@@ -114,7 +158,6 @@ public class PrincipalAlumnos {
                 matriz[a][b] = guardadoTempo; // Las pociones aleatoia recibe el valor (guardadotempo).
             }
         }
-        printMatrix(matriz);
     }
 
     /**
@@ -137,15 +180,14 @@ public class PrincipalAlumnos {
      * @return
      */
     private static boolean checkFinished(boolean[][] matrizVisible) {
-        boolean cendaVi = true;
         for (int i = 0; i < matrizVisible.length; i++) {
             for (int j = 0; j < matrizVisible[0].length; j++) {
-               if (matrizVisible[i][j] = false){
-                   cendaVi = false;
+               if (!matrizVisible[i][j]){
+                   return false;
                }
             }
         }
-        return cendaVi;
+        return true;
     }
 
 }
