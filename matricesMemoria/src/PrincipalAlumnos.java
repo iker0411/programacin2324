@@ -22,21 +22,21 @@ public class PrincipalAlumnos {
         fillMatrix(matriz); // Su función es llenar las matrices que tienen letras, ya que aún no está desordenadas.
         randomizeMatrix(matriz); //Este método lo que hace es que coge todas las letras del fillMatriz y lo desordena.
         int intentosRestan = INTENTOS;
-        while (intentosRestan > 0 && !checkFinished(matrizVisible)){ //El juego se ejecutará mientra la matriz sea visible, y si no es visible no se ejecutará completamente.
-            printVisibleMatrix( matriz, matrizVisible);
+        while (intentosRestan > 0 && !checkFinished(matrizVisible)) { //El juego se ejecutará mientra la matriz sea visible, y si no es visible no se ejecutará completamente.
+            printVisibleMatrix(matriz, matrizVisible);
             System.out.println("Actualemente tienes " + intentosRestan + " intentos para adivinarlo"); //El usuario nos pone las cordenadas que quiere saber.
             System.out.println("Dime la fila que quieras ver: (0-3) ");
             int pfilas1 = sc.nextInt();
             System.out.println("Dime la columna que quieres ver: (0-3) ");
             int pcolum1 = sc.nextInt();
-            if(pfilas1 > 3 || pcolum1 > 3){ //Si el usuario se sale fuera de la matriz, sale un mensaje de error.
+            if (pfilas1 > 3 || pcolum1 > 3) { //Si el usuario se sale fuera de la matriz, sale un mensaje de error.
                 System.out.println("Introduce un valor que este entre el 0 y el 3");
-                intentosRestan --; //Si se pasa de la matriz te quita un intento.
+                intentosRestan--; //Si se pasa de la matriz te quita un intento.
                 continue;
             }
-            if (matrizVisible[pfilas1][pcolum1]){ //Si la cordennada que ha puesto el usuario, existe se mostrará por mensaje.
+            if (matrizVisible[pfilas1][pcolum1]) { //Si la cordennada que ha puesto el usuario, existe se mostrará por mensaje.
                 System.out.println("Esta casilla ya existe");
-            }else{
+            } else {
                 matrizVisible[pfilas1][pcolum1] = true;
                 printVisibleMatrix(matriz, matrizVisible);
             }
@@ -45,24 +45,24 @@ public class PrincipalAlumnos {
             int pfilas2 = sc.nextInt();
             System.out.println("Dime la columna que quieres ver: (0-3) ");
             int pcolum2 = sc.nextInt();
-            if(pfilas2 > 3 || pcolum2 > 3){
+            if (pfilas2 > 3 || pcolum2 > 3) {
                 System.out.println("Introduce un valor que este entre el 0 y el 3");
-                intentosRestan --;
+                intentosRestan--;
                 continue;
             }
-            if (matrizVisible[pfilas2][pcolum2]){
+            if (matrizVisible[pfilas2][pcolum2]) {
                 System.out.println("Esta casilla ya existe");
                 matrizVisible[pfilas1][pcolum1] = false;
-            }else{
+            } else {
                 matrizVisible[pfilas2][pcolum2] = true;
                 printVisibleMatrix(matriz, matrizVisible);
             }
-            if (matriz[pfilas1][pcolum1] != matriz[pfilas2][pcolum2]){ //Si las cordenadas que has introducido no coincide, te muestra un mensaje y se vuelve a ocultar.
+            if (matriz[pfilas1][pcolum1] != matriz[pfilas2][pcolum2]) { //Si las cordenadas que has introducido no coincide, te muestra un mensaje y se vuelve a ocultar.
                 System.out.println("No coinciden ninguna letra");
                 matrizVisible[pfilas1][pcolum1] = false;
                 matrizVisible[pfilas2][pcolum2] = false;
-                intentosRestan --;
-            }else {
+                intentosRestan--;
+            } else {
                 System.out.println("Todas las letras que has introducido coinciden");
             }
 
@@ -104,10 +104,10 @@ public class PrincipalAlumnos {
         char le = 'A'; // le es letra
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j]=le;
+                matriz[i][j] = le;
                 le++;
-                if (le > 'A' + TAM * TAM /2){
-                    le='A';
+                if (le > 'A' + TAM * TAM / 2) {
+                    le = 'A';
                 }
             }
         }
@@ -131,7 +131,7 @@ public class PrincipalAlumnos {
     private static void ocultarTodaLaMatriz(boolean[][] matrizVisible) { //Este método lo que hace es que me oculta toda la matriz visible.
         for (int i = 0; i < matrizVisible.length; i++) {
             for (int j = 0; j < matrizVisible[0].length; j++) {
-               matrizVisible[i][j] = false;
+                matrizVisible[i][j] = false;
             }
         }
     }
@@ -139,9 +139,9 @@ public class PrincipalAlumnos {
     private static boolean checkFinished(boolean[][] matrizVisible) { //Este método lo que hace cuando la matriz no es visible totalmente, aún sigue el juego, pero cuando es visible toda matriz, te sale el mensaje que has ganado.
         for (int i = 0; i < matrizVisible.length; i++) {
             for (int j = 0; j < matrizVisible[0].length; j++) {
-               if (!matrizVisible[i][j]){
-                   return false;
-               }
+                if (!matrizVisible[i][j]) {
+                    return false;
+                }
             }
         }
         return true;

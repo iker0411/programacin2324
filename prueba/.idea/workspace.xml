@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0945c462-d227-4874-b157-f88b2616c7d0" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/../matricesMemoria/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../matricesMemoria/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../matricesMemoria/src/PrincipalAlumnos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matricesMemoria/src/PrincipalAlumnos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
->>>>>>> 4f93eec6e1f12b5a4fcc0ddd36f8c9519ec88dab
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-<<<<<<< HEAD
-    "last_opened_file_path": "C:/Users/ikerM/Documents/programacioncasa/matricesMemoria",
-=======
-    "last_opened_file_path": "C:/Users/Alumno/Desktop/programación/matricesMemoria",
->>>>>>> 4f93eec6e1f12b5a4fcc0ddd36f8c9519ec88dab
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,22 +52,9 @@
       <recent name="Bolein1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio12">
+  <component name="RunManager" selected="Application.Rectangulo">
     <configuration name="Ejercicio12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema2.Matrices.Ejercicio12" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema2.Matrices.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema2.Matrices.Ejercicio3" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
@@ -129,13 +105,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Rectangulo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Rectangulo" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Rectangulo" />
         <item itemvalue="Application.Ejercicio12" />
         <item itemvalue="Application.Ejercicio6" />
         <item itemvalue="Application.Ejercicio5" />
         <item itemvalue="Application.Ejercicio4" />
-        <item itemvalue="Application.Ejercicio3" />
       </list>
     </recent_temporary>
   </component>
