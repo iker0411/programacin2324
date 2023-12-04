@@ -1,4 +1,4 @@
-package Tema3;
+package Tema3.Boletin4_2_1;
 
 import java.time.LocalDate;
 
@@ -63,6 +63,6 @@ public class Persona {
     }
 
     public int numDias() {
-
+        return(dni);
     }
 }

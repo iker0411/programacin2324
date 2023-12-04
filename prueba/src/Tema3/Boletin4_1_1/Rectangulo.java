@@ -1,7 +1,4 @@
-package Tema3;
-
-import javax.security.auth.login.AccountNotFoundException;
-import java.util.Arrays;
+package Tema3.Boletin4_1_1;
 
 public class Rectangulo {
     public static  final double MAX_LONGITUD_ANCHO = 20;
