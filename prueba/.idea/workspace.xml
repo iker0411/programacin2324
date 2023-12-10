@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_1_2/cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_1_2/principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_2_1/principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_1/cartas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boletin1_1/MientradaSalida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin1_1/MientradaSalida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_2_1/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Rectangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_1_1/Rectangulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +39,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.principal.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Alumno/Desktop/programación/prueba/src/Tema3/4-2&quot;
   }
 }</component>
@@ -134,6 +131,13 @@
         <item itemvalue="Application.Ejercicio6" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-8336523bb0d9-ce1e98ff" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
