@@ -1,6 +1,8 @@
 package Tema3.Boletin4_2_1;
 
 import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class principal {
     public static void main(String[] args) {
@@ -12,5 +14,11 @@ public class principal {
 
         float imc = persona.getImc();
         System.out.println("El índice de masa corporal (IMC) es: " + imc);
+
+        LocalDate birthday = LocalDate.of(2004,11,26);
+        LocalDate today = LocalDate.now();
+        Period p = Period.between(birthday, today);
+        long p2 = ChronoUnit.DAYS.between(birthday, today);
+        System.out.printf("Tengo %d días de viejo ", p2);
     }
 }
