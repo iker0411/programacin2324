@@ -12,13 +12,14 @@ public class Principal {
             }
         }
         Juego j = new Juego(baraja);
+        j.mostrarBaraja();
+        j.baraja();
+        j.mostrarBaraja();
         try {
-            j.repartircartas(13,4);
+            j.repartircartas(4,4);
         }catch (JuegoException e){
             System.out.println(e.getMessage());
         }
         j.mostrarBaraja();
-        //j.baraja();
-        //j.mostrarBaraja();
     }
 }
