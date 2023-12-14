@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_2/Mensaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_2/MensajesExcepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_2/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_2/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Biblioteca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/BibliotecaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tema3/frase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_3_1/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_1/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_3_1/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_3_1/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
   "keyToString": {
     "Application.Tema3.Boletin4_3_1.Principal.executor": "Run",
     "Application.Tema3.Boletin4_3_2.Principal.executor": "Run",
+    "Application.frase.executor": "Run",
     "Application.principal.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,19 +70,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tema3.Boletin4_3_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Rectangulo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_1_1.Rectangulo" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.EjercicioAvion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="frase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.frase" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_2_1.principal" />
       <module name="prueba" />
@@ -132,10 +132,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Tema3.Boletin4_3_2.Principal" />
+        <item itemvalue="Application.frase" />
         <item itemvalue="Application.Tema3.Boletin4_3_1.Principal" />
         <item itemvalue="Application.Juego" />
         <item itemvalue="Application.principal" />
-        <item itemvalue="Application.Rectangulo" />
       </list>
     </recent_temporary>
   </component>
