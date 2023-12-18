@@ -19,6 +19,10 @@ public class Libro {
         this.ejemplaresDisponibles = ejemplaresDisponibles;
     }
 
+    public int getEjemplaresDisponibles() {
+        return ejemplaresDisponibles;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,7 +39,7 @@ public class Libro {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Libro{");
-        sb.append(nombre).append("-");
+        sb.append(nombre).append(" - ");
         sb.append(autor).append(' ');
         sb.append(", ejemplares").append(numEjemplares);
         sb.append(" /").append(ejemplaresDisponibles);

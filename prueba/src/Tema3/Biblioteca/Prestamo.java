@@ -17,8 +17,15 @@ public class Prestamo {
 
     public Prestamo(LocalDateTime fechainicio, LocalDate fechaLimiteDevolucion, Usuario usuario, Libro libro) {
         this.fechainicio = fechainicio;
-        this.fechaLimiteDevolucion = fechaLimiteDevolucion;
+        this.fechaLimiteDevolucion = fechainicio.plusDays(NUM_DIAS_PRESTAMO).toLocalDate();
         this.usuario = usuario;
         this.libro = libro;
+    }
+    public boolean estaActivo(){
+        return fechaRealDevolucion == null;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 }

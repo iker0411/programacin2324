@@ -7,14 +7,16 @@ public class Biblioteca {
 
     public static final int NUMERO_MAX_USUARIOS = 2;
     public static final int NUMERO_MAX_LIBROS = 2;
+    public static final int NUMERO_MAX_PESTAMOS = 5;
     private String nombre;
     private Libro[] libros;
     private Usuario[] usuarios;
-
+    private final Prestamo[] prestamos;
     public Biblioteca(String nombre) {
         this.nombre = nombre;
         this.libros = new Libro[NUMERO_MAX_LIBROS];
         this.usuarios = new Usuario[NUMERO_MAX_USUARIOS];
+        this.prestamos = new  Prestamo[NUMERO_MAX_PESTAMOS];
 
     }
     public void altaSocio( Usuario u ) throws BibliotecaException{
@@ -32,9 +34,9 @@ public class Biblioteca {
                 usuarios[i] = u;
                 break;
             }
-
         }
     }
+
     public void agregarNuevoLibro(Libro l)throws BibliotecaException{
         if (existeLibro(l)){
             throw new BibliotecaException("Este libro ya está dado de alta");
@@ -48,7 +50,31 @@ public class Biblioteca {
                break;
             }
         }
-
+    }
+    public void realizarPrestamo(Usuario u, Libro l)throws BibliotecaException{
+        /*
+        1.No repetir 2 cees el mismo prestamo a la vez
+        2.Dispoiblilidad del Libro.
+        3.No Superar el numero máximo de prestamo silmultáneo.
+         */
+        if(l.getEjemplaresDisponibles()==0){
+            throw new BibliotecaException("No nos quedan ejempplares");
+        }
+        if (getNumeroPrestamosActivosUsuario(u)==Prestamo.NUM_DIAS_PRESTAMO){
+            throw new BibliotecaException("No puedes hacer más prestamoos");
+        }
+    }
+    public int getNumeroPrestamosActivosUsuario(Usuario u){
+        int contadorPrestamos = 0;
+        for (int i = 0; i<prestamos.length; i++){
+            if (prestamos[i] == null){
+                break;
+            }
+            if (prestamos[i] != null && prestamos[i].getUsuario().equals(u)&& prestamos[i].estaActivo()){
+                contadorPrestamos++;
+            }
+        }
+        return contadorPrestamos;
     }
     public boolean existeUsuario(Usuario u) {
         boolean usuarioEncontrado = false;
