@@ -31,4 +31,15 @@ public class Libro {
     public int hashCode() {
         return Objects.hash(nombre, autor);
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Libro{");
+        sb.append(nombre).append("-");
+        sb.append(autor).append(' ');
+        sb.append(", ejemplares").append(numEjemplares);
+        sb.append(" /").append(ejemplaresDisponibles);
+        sb.append('}');
+        return sb.toString();
+    }
 }

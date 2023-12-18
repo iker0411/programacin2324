@@ -30,4 +30,15 @@ public class Usuario {
     public void setNumerodesocio(String numerodesocio) {
         this.numerodesocio = numerodesocio;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Usuario{");
+        sb.append("nombre='").append(nombre).append('\'');
+        sb.append(", apellido='").append(apellido).append('\'');
+        sb.append(", dni='").append(dni).append('\'');
+        sb.append(", numerodesocio='").append(numerodesocio).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
