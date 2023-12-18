@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Prestamo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Biblioteca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Libro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Usuario.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Miprimerproyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Miprimerproyecto.java" afterDir="false" />
+>>>>>>> e38a824ba59c48ae28720385b77e026e1a7aadd6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Principal.executor": "Run",
@@ -53,8 +59,21 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Alumno/Desktop/programación/prueba/src/Tema3/4-2"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Tema3.Boletin4_3_1.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_3_2.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.frase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.principal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alumno/Desktop/programación/prueba/src/Tema3/4-2&quot;
+>>>>>>> e38a824ba59c48ae28720385b77e026e1a7aadd6
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Tema3" />

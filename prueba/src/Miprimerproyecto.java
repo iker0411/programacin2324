@@ -15,6 +15,7 @@ public class Miprimerproyecto {
         }
         else if (tipovehiculo.equals("camión")){
             System.out.println("velocidad = 80km/h");
+            //
         }
         else{
             System.out.println("No hay más vehiculos");
