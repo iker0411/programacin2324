@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="">HEAD
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Prestamo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Principal.java" afterDir="false" />
+    <list default="true" id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Biblioteca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Libro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Biblioteca/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Biblioteca/Usuario.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Miprimerproyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Miprimerproyecto.java" afterDir="false" />
->>>>>>> e38a824ba59c48ae28720385b77e026e1a7aadd6
+      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletín4_4_1/caracte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_1/Caracte.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,67 +20,31 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2VhqcSby2nAdIL6OHviTKRBaH9q" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Caracte.executor": "Run",
     "Application.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_3_1.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_3_2.Principal.executor": "Run",
-    "Application.frase.executor": "Run",
-    "Application.principal.executor": "Run",
+    "Application.caracte.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Alumno/Desktop/programación/prueba/src/Tema3/4-2"
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Tema3.Boletin4_3_1.Principal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Tema3.Boletin4_3_2.Principal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.frase.executor&quot;: &quot;Run&quot;,
-    &quot;Application.principal.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alumno/Desktop/programación/prueba/src/Tema3/4-2&quot;
->>>>>>> e38a824ba59c48ae28720385b77e026e1a7aadd6
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Tema3" />
-      <recent name="Tema2" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Bolein1_1" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Principal">
-    <configuration name="Juego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_3_1.Juego" />
+}]]></component>
+  <component name="RunManager" selected="Application.Caracte">
+    <configuration name="Caracte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_1.Caracte" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_3_1.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,52 +65,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tema3.Boletin4_3_1.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_3_1.Principal" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_3_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tema3.Boletin4_3_2.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_3_2.Principal" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_3_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="frase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.frase" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Caracte" />
         <item itemvalue="Application.Principal" />
-        <item itemvalue="Application.Tema3.Boletin4_3_2.Principal" />
-        <item itemvalue="Application.frase" />
-        <item itemvalue="Application.Tema3.Boletin4_3_1.Principal" />
-        <item itemvalue="Application.Juego" />
       </list>
     </recent_temporary>
   </component>
@@ -168,42 +82,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d3b412dc-e667-4bc3-b7d3-adbba805cbbf" name="Changes" comment="" />
-      <created>1695298739963</created>
+      <changelist id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="" />
+      <created>1703060423952</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695298739963</updated>
+      <updated>1703060423952</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="*" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
