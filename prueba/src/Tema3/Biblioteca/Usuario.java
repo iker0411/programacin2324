@@ -6,13 +6,14 @@ public class Usuario {
     private String nombre;
     private String apellido;
     private String dni;
-    private String numerodesocio;
+    private String numSocio;
 
     public Usuario(String nombre, String apellido, String dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -27,8 +28,8 @@ public class Usuario {
         return Objects.hash(dni);
     }
 
-    public void setNumerodesocio(String numerodesocio) {
-        this.numerodesocio = numerodesocio;
+    public void setNumSocio(String numSocio) {
+        this.numSocio = numSocio;
     }
 
     @Override
@@ -36,8 +37,7 @@ public class Usuario {
         final StringBuilder sb = new StringBuilder("Usuario{");
         sb.append("nombre='").append(nombre).append('\'');
         sb.append(", apellido='").append(apellido).append('\'');
-        sb.append(", dni='").append(dni).append('\'');
-        sb.append(", numerodesocio='").append(numerodesocio).append('\'');
+        sb.append(", numSocio='").append(numSocio).append('\'');
         sb.append('}');
         return sb.toString();
     }
