@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletín4_4_1/caracte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_1/Caracte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_1/Caracte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_1/Caracte.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2af9gyjkD1uJ8i1VtWap34B7Sju" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -32,13 +40,15 @@
     "Application.Caracte.executor": "Run",
     "Application.Principal.executor": "Run",
     "Application.caracte.executor": "Run",
+    "Application.caracter.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Caracte">
+  <component name="RunManager" selected="Application.caracter">
     <configuration name="Caracte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_1.Caracte" />
       <module name="prueba" />
@@ -65,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="caracter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_2.caracter" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema3.Boletin4_4_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.caracter" />
         <item itemvalue="Application.Caracte" />
         <item itemvalue="Application.Principal" />
       </list>
