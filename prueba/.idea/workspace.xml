@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_1_3/Maquina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletín4_1_3/Maquina.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletín4_1_3/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_1_3/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_3/Comprobador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_4/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_4/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     "Application.Principal.executor": "Run",
     "Application.Tema3.Boletin4_1_3.Principal.executor": "Run",
     "Application.Tema3.Boletin4_4_3.Principal.executor": "Run",
+    "Application.Tema3.Boletin4_4_4.Principal.executor": "Run",
     "Application.caracte.executor": "Run",
     "Application.caracter.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -52,26 +52,13 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Tema3.Boletin4_4_3.Principal">
+  <component name="RunManager" selected="Application.Tema3.Boletin4_4_4.Principal">
     <configuration name="Caracte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_1.Caracte" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tema3.Boletin4_4_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Biblioteca.Principal" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.Biblioteca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tema3.Boletin4_4_4.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_4.Principal" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema3.Boletin4_4_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="caracter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_2.caracter" />
       <module name="prueba" />
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tema3.Boletin4_4_4.Principal" />
         <item itemvalue="Application.Tema3.Boletin4_4_3.Principal" />
         <item itemvalue="Application.Tema3.Boletin4_1_3.Principal" />
         <item itemvalue="Application.caracter" />
         <item itemvalue="Application.Caracte" />
-        <item itemvalue="Application.Principal" />
       </list>
     </recent_temporary>
   </component>
