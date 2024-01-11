@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_3/Comprobador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_4/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_4/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema3/Boletin4_4_5/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema3/Boletin4_4_5/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +40,14 @@
   "keyToString": {
     "Application.Caracte.executor": "Run",
     "Application.Principal.executor": "Run",
+    "Application.Principal2.executor": "Run",
     "Application.Tema3.Boletin4_1_3.Principal.executor": "Run",
     "Application.Tema3.Boletin4_4_3.Principal.executor": "Run",
     "Application.Tema3.Boletin4_4_4.Principal.executor": "Run",
+    "Application.Tema3.Boletin4_4_6.Principal.executor": "Run",
+    "Application.Tema3.Boletin4_4_7.Principal.executor": "Run",
+    "Application.Tema3.Boletin4_4_8.Principal.executor": "Run",
+    "Application.Tema3.Boletin4_4_9.Principal.executor": "Run",
     "Application.caracte.executor": "Run",
     "Application.caracter.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -52,13 +57,13 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Tema3.Boletin4_4_4.Principal">
-    <configuration name="Caracte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_1.Caracte" />
+  <component name="RunManager" selected="Application.Tema3.Boletin4_4_9.Principal">
+    <configuration name="Principal2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_6.Principal2" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_1.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tema3.Boletin4_1_3.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_1_3.Principal" />
+    <configuration name="Tema3.Boletin4_4_6.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_6.Principal" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_1_3.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tema3.Boletin4_4_3.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_3.Principal" />
+    <configuration name="Tema3.Boletin4_4_7.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_7.Principal" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_3.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tema3.Boletin4_4_4.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_4.Principal" />
+    <configuration name="Tema3.Boletin4_4_8.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_8.Principal" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_4.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="caracter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_2.caracter" />
+    <configuration name="Tema3.Boletin4_4_9.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_9.Principal" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_2.*" />
+          <option name="PATTERN" value="Tema3.Boletin4_4_9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tema3.Boletin4_4_4.Principal" />
-        <item itemvalue="Application.Tema3.Boletin4_4_3.Principal" />
-        <item itemvalue="Application.Tema3.Boletin4_1_3.Principal" />
-        <item itemvalue="Application.caracter" />
-        <item itemvalue="Application.Caracte" />
+        <item itemvalue="Application.Tema3.Boletin4_4_9.Principal" />
+        <item itemvalue="Application.Tema3.Boletin4_4_8.Principal" />
+        <item itemvalue="Application.Tema3.Boletin4_4_7.Principal" />
+        <item itemvalue="Application.Tema3.Boletin4_4_6.Principal" />
+        <item itemvalue="Application.Principal2" />
       </list>
     </recent_temporary>
   </component>

@@ -15,8 +15,18 @@ public class Principal {
         System.out.println("\n" + reeemplazarExpresion(sentence, word1, word2));
     }
     public static String reeemplazarExpresion(String frase, String reemplazado, String reeemplazador){
-        for(int i = frase.indexOf(reemplazado); i != -1; i += reeemplazador.length()){ //Todo: Revisar última letra error.
-            
-        }
+            StringBuilder str = new StringBuilder(frase);
+
+            for (int i = 0; i != -1; i += reeemplazador.length()){
+                i = str.indexOf(reemplazado, i);
+
+                if (i != -1){
+                    str.delete(i, i +reemplazado.length());
+                    str.insert(i, reeemplazador);
+                }else {
+                    break;
+                }
+            }
+        return  String.valueOf(str);
     }
 }
