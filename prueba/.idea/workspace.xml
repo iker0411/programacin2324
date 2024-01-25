@@ -40,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Caracte.executor": "Run",
+    "Application.Principal (1).executor": "Run",
     "Application.Principal.executor": "Run",
     "Application.Principal2.executor": "Run",
     "Application.Tema3.Boletin4_1_3.Principal.executor": "Run",
@@ -49,48 +50,39 @@
     "Application.Tema3.Boletin4_4_7.Principal.executor": "Run",
     "Application.Tema3.Boletin4_4_8.Principal.executor": "Run",
     "Application.Tema3.Boletin4_4_9.Principal.executor": "Run",
+    "Application.Tema3.examenobjetos.Principal.executor": "Run",
     "Application.caracte.executor": "Run",
     "Application.caracter.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alumno/Desktop/examenobjetos",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Tema3.examenobjetos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alumno\Desktop\programación\prueba\src\Tema3\examenobjetos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Tema3.examenobjetos.Principal">
+    <configuration name="Principal (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Principal" />
+      <module name="prueba" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_10.Principal" />
       <module name="prueba" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tema3.Boletin4_4_10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tema3.Boletin4_4_6.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_6.Principal" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tema3.Boletin4_4_7.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema3.Boletin4_4_7.Principal" />
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema3.Boletin4_4_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,13 +116,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tema3.examenobjetos.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema3.examenobjetos.Principal" />
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tema3.examenobjetos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tema3.examenobjetos.Principal" />
+        <item itemvalue="Application.Principal (1)" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Tema3.Boletin4_4_9.Principal" />
         <item itemvalue="Application.Tema3.Boletin4_4_8.Principal" />
-        <item itemvalue="Application.Tema3.Boletin4_4_7.Principal" />
-        <item itemvalue="Application.Tema3.Boletin4_4_6.Principal" />
       </list>
     </recent_temporary>
   </component>
