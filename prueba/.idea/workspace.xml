@@ -38,30 +38,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Caracte.executor": "Run",
-    "Application.Principal (1).executor": "Run",
-    "Application.Principal.executor": "Run",
-    "Application.Principal2.executor": "Run",
-    "Application.Tema3.Boletin4_1_3.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_3.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_4.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_6.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_7.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_8.Principal.executor": "Run",
-    "Application.Tema3.Boletin4_4_9.Principal.executor": "Run",
-    "Application.Tema3.examenobjetos.Principal.executor": "Run",
-    "Application.caracte.executor": "Run",
-    "Application.caracter.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Alumno/Desktop/programación/prueba/src/Tema4/Boletin5_5_2",
-    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Caracte.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_1_3.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_3.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_4.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_6.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_7.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_8.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.Boletin4_4_9.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tema3.examenobjetos.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.caracte.executor&quot;: &quot;Run&quot;,
+    &quot;Application.caracter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alumno/Desktop/programación/prueba/src/Tema4/Boletin5_5_2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Tema3.examenobjetos" />
