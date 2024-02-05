@@ -1,91 +1,93 @@
 package Tema4.Boletin5_1_3;
 
 public class Personaje {
-    public static final int FUERZA_MAX = 20;
-    public static final int INTELIGENCIA_MAX = 20;
-    public static final int VIDA_MAX = 100;
-
+    public static final int FUERZA_MAXIMA=20;
+    public static final int INTELIGENCIA_MAXIMA=20;
+    public static final int VIDA_MAXIMA=100;
+    public static final int FUERZA_MIN=0;
+    public static final int INTELIGENCIA_MIN=0;
+    public static final int VIDA_MIN=0;
     private String nombre;
-    private TRaza raza;
+    private TRaza razas;
     private int fuerza;
     private int inteligencia;
     private int vidaMaxima;
     private int vidaActual;
 
-    public Personaje(String nombre, TRaza raza, int fuerza, int inteligencia, int vidaMaxima) throws PersonajeException {
+    public Personaje(String nombre, TRaza razas, int fuerza, int inteligencia, int vidaMaxima) throws PersonajeException {
         this.nombre = nombre;
-        this.raza = raza;
+        this.razas = razas;
         setFuerza(fuerza);
         setInteligencia(inteligencia);
         setVidaMaxima(vidaMaxima);
         setVidaActual(vidaMaxima);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setFuerza(int fuerza) throws PersonajeException {
-        if (this.fuerza < 0 || this.fuerza > FUERZA_MAX){
-            throw new PersonajeException("Valor de fuerza no permitido");
-        }
-        this.fuerza = fuerza;
-    }
-
-    public void setInteligencia(int inteligencia) throws PersonajeException {
-        if (this.inteligencia < 0 || this.inteligencia > INTELIGENCIA_MAX){
-            throw new PersonajeException("Valor de inteligencia no permitido");
-        }
-        this.inteligencia = inteligencia;
-    }
-
-    public void setVidaMaxima(int vidaMaxima) throws PersonajeException {
-        if (this.vidaMaxima < 0 || this.vidaMaxima > VIDA_MAX){
-            throw new PersonajeException("Valor de vida no permitido");
-        }
-        this.vidaMaxima = vidaMaxima;
-    }
-
-    public void setVidaActual(int vidaActual) throws PersonajeException {
-        if (this.vidaActual < 0 || this.vidaActual > vidaMaxima){
-            throw new PersonajeException("Valor de vida no permitido");
-        }
-        this.vidaActual = vidaActual;
-    }
-
     public String getNombre() {
         return nombre;
     }
 
-    public TRaza getRaza() {
-        return raza;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getFuerza() {
         return fuerza;
     }
 
+    public void setFuerza(int fuerza) throws PersonajeException {
+        if(fuerza < FUERZA_MIN || fuerza > FUERZA_MAXIMA){
+            throw new PersonajeException("Valor de fuerza no permitido");
+        }
+        this.fuerza = fuerza;
+    }
+
     public int getInteligencia() {
         return inteligencia;
+    }
+
+    public void setInteligencia(int inteligencia) throws PersonajeException {
+        if (inteligencia < INTELIGENCIA_MIN || inteligencia > INTELIGENCIA_MAXIMA){
+            throw new PersonajeException("Valor de inteligencia no permitido");
+        }
+        this.inteligencia = inteligencia;
     }
 
     public int getVidaMaxima() {
         return vidaMaxima;
     }
 
+    public void setVidaMaxima(int vidaMaxima) throws PersonajeException {
+        if (vidaMaxima < VIDA_MIN || vidaMaxima > VIDA_MAXIMA){
+            throw new PersonajeException("Valor de vida no permitido");
+        }
+        this.vidaMaxima = vidaMaxima;
+    }
+
     public int getVidaActual() {
         return vidaActual;
     }
 
+    public void setVidaActual(int vidaActual) throws PersonajeException {
+        if (vidaActual < VIDA_MIN ){
+            this.vidaActual = VIDA_MIN;
+        } else if (vidaActual > vidaMaxima) {
+            this.vidaActual = vidaMaxima;
+        }else {
+            this.vidaActual = vidaActual;
+        }
+    }
+
     @Override
     public String toString() {
-        return "Personaje{" +
-                "nombre='" + nombre + '\'' +
-                ", raza=" + raza +
-                ", fuerza=" + fuerza +
-                ", inteligencia=" + inteligencia +
-                ", vidaMaxima=" + vidaMaxima +
-                ", vidaActual=" + vidaActual +
-                '}';
+        final StringBuilder sb = new StringBuilder("Personaje{");
+        sb.append("nombre='").append(nombre).append('\'');
+        sb.append(", razas=").append(razas);
+        sb.append(", fuerza=").append(fuerza);
+        sb.append(", inteligencia=").append(inteligencia);
+        sb.append(", vidaMaxima=").append(vidaMaxima);
+        sb.append(", vidaActual=").append(vidaActual);
+        sb.append('}');
+        return sb.toString();
     }
 }

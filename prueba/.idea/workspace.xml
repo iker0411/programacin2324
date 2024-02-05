@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1112a61-6406-41c3-aa80-b385cdb5006f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema4/Boletin5_1_3/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema4/Boletin5_1_3/Mago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tema4/Boletin5_1_3/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tema4/Boletin5_1_3/Personaje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +19,15 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Tema4/Boletin5_1_3/Clerigo.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
