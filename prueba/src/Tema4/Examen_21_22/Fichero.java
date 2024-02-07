@@ -7,9 +7,10 @@ public class Fichero {
     private long size;
     private LocalDateTime dateCreatime;
 
+
     public Fichero(String nombre, long size) {
         this.nombre = nombre;
-        this.size = size;
+        setSize(size);
         this.dateCreatime = LocalDateTime.now();
     }
 
@@ -17,7 +18,8 @@ public class Fichero {
         return size;
     }
 
-    public void setSize(long size) {
-        this.size = size;
+    private void setSize(long size)  {
+       if (size < 1) throw new IllegalArgumentException("El tamaño del archivo no puede ser negativo");
+       this.size = size;
     }
 }
