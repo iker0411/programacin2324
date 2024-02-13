@@ -1,15 +1,15 @@
 package Tema4.Examen_21_22;
 
-public class FicheroBinario extends Fichero{
-
+public class FicheroImagen extends Fichero{
     private byte[] contenido;
-    public FicheroBinario(String nombre, byte[] contenido) {
+    private TFormato formato;
+
+    public FicheroImagen(String nombre, byte[] contenido, TFormato formato) {
         super(nombre);
-        setContenido(contenido);
-    }
-    private void setContenido(byte[] contenido){
         this.contenido = contenido;
+        this.formato = formato;
     }
+
 
     @Override
     public long getSize() {
