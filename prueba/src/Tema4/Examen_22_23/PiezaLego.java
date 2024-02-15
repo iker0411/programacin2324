@@ -1,4 +1,4 @@
-package Examen_22_23;
+package Tema4.Examen_22_23;
 
 public class PiezaLego extends JuguetePlastico implements Apilable{
     private int longitud;

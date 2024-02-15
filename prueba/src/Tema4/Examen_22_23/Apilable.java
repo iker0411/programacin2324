@@ -1,4 +1,4 @@
-package Examen_22_23;
+package Tema4.Examen_22_23;
 
 public interface Apilable {
     public default void apilar(Juguete juguete) throws JugueteException{

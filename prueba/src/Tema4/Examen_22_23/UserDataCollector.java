@@ -1,4 +1,4 @@
-package Examen_22_23;
+package Tema4.Examen_22_23;
 
 import java.util.Arrays;
 import java.util.Scanner;

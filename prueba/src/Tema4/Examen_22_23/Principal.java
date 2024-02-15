@@ -1,4 +1,4 @@
-package Examen_22_23;
+package Tema4.Examen_22_23;
 
 //IMPORTS
 //TODO: Incluir los ficheros necesarios si están en otro paquete
@@ -6,7 +6,7 @@ package Examen_22_23;
 
 public class Principal {
 
-    public static final int MAX_JUGUETES = 10;
+    /*public static final int MAX_JUGUETES = 10;
     public static Juguete[] juguetes = new Juguete[MAX_JUGUETES];
     public static int numJuguetes = 0;
 
@@ -118,7 +118,7 @@ public class Principal {
         sb.append("7. Salir\n");
 
         return sb.toString();
-    }
+    }*/
 
 
 }
