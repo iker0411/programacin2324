@@ -8,14 +8,17 @@ public class Dado implements ILanzable {
     private Random random;
 
     public Dado(int numCaras, int puntuacionMinima) {
+        if (numCaras < 4){
+            throw new IllegalArgumentException("El numero mínimo de caras del dado dedbe ser 4");
+        }
         numCaras = numCaras;
         puntuacionMinima = puntuacionMinima;
-        random = new Random();
+
     }
 
     @Override
     public int lanza() {
-        return 0;//NO SE COMO
+
     }
 
     @Override
