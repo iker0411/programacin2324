@@ -6,7 +6,7 @@ package Tema4.Examen_22_23;
 
 public class Principal {
 
-    /*public static final int MAX_JUGUETES = 10; //hay que hacerlo 
+    /*public static final int MAX_JUGUETES = 10; //hay que hacerlo
     public static Juguete[] juguetes = new Juguete[MAX_JUGUETES];
     public static int numJuguetes = 0;
 
