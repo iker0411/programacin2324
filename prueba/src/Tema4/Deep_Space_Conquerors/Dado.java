@@ -16,10 +16,10 @@ public class Dado implements ILanzable {
 
     }
 
-    @Override
+   /* @Override
     public int lanza() {
 
-    }
+    }*/
 
     @Override
     public int getMin() {

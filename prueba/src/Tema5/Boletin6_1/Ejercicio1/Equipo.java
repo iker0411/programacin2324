@@ -33,6 +33,23 @@ public class Equipo {
         }
     }
 
+    public Set<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public Equipo unionEquipos(Equipo equipo2 ){
+        Equipo equipoV = new Equipo("Union de: " + nombre + " con " + equipo2.nombre );
+        equipoV.alumnos.addAll(alumnos);
+        equipoV.alumnos.addAll(equipo2.alumnos);
+        return equipoV;
+    }
+
+    public Equipo interseccionEquipos(Equipo equipo2 ){
+        Equipo equipoV = new Equipo("Intersección: " + nombre + " con " + equipo2.nombre );
+        equipoV.alumnos.addAll(alumnos);
+        equipoV.alumnos.retainAll(equipo2.alumnos);
+        return equipoV;
+    }
 
 
 }
