@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-public class Mensaje {
+public class Mensaje implements Comparable<Mensaje> {
    private Persona remitente;
    private String text;
    private LocalDateTime fecha;
@@ -32,5 +32,10 @@ public class Mensaje {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-YYYY HH:mm");
         StringBuilder mensaje = new StringBuilder("De: ").append(remitente.getNombre()).append(" Texto: ").append(text).append(" Fecha y hora:  ").append(fecha.format(format));
         return mensaje.toString();
+    }
+
+    @Override
+    public int compareTo(Mensaje other) {
+        return other.fecha.compareTo(fecha);
     }
 }

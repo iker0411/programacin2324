@@ -18,7 +18,9 @@ public class Alumno extends Persona{
     @Override
     public void sendMessage(Persona receptor, String mensaje) throws MensajesExcepcion {
         LocalDate fechaMinima = LocalDate.now().minusYears(MAYORIA_EDAD);
-        if (receptor instanceof Alumno && fechaNacimineto.isAfter(fechaMinima)) throw new MensajesExcepcion("Los alumnos menores de edad no pueden enviar mensajes a otros alumnos");
+        if (receptor instanceof Alumno && fechaNacimineto.isAfter(fechaMinima)) {
+            throw new MensajesExcepcion("Los alumnos menores de edad no pueden enviar mensajes a otros alumnos");
+         }
         super.sendMessage(receptor, mensaje);
     }
 
