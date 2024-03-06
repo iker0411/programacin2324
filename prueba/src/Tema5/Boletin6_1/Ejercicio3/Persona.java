@@ -43,5 +43,16 @@ public abstract class Persona {
         return  mensaje.toString();
     }
 
+    public void borrarMensaje(int numero) throws MensajesExcepcion{
+        try {
+            bandejaEntrada.remove(numero - 1);
+        }catch (IllegalArgumentException e){
+            throw new RuntimeException(e);
+        }
+
+
+        bandejaEntrada.remove(numero-1);
+    }
+
 
 }
