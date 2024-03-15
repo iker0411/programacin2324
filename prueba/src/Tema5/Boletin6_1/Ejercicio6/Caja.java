@@ -1,4 +1,4 @@
-package Tema5.Ejercicio6;
+package Tema5.Boletin6_1.Ejercicio6;
 
 import java.util.LinkedList;
 import java.util.Queue;
