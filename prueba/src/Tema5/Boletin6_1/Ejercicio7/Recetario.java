@@ -8,34 +8,36 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
 public class Recetario {
-    HashMap<String,Receta> recetas;
+    private HashMap<String, Receta> recetas;
 
-    public Recetario() {
-        this.recetas = new HashMap<>();
+    public Recetario(){
+        recetas = new HashMap<>();
     }
 
-    public void anadirReceta(Receta nuevaReceta) throws RecetaException{
-        if (recetas.containsKey(nuevaReceta.getNombreReceta())){
+    public void annadirReceta(Receta nuevaReceta) throws RecetaException {
+        if(recetas.containsKey(nuevaReceta.getNombre())){
             throw new RecetaException("Ya existe una receta con ese nombre");
         }
-        recetas.put(nuevaReceta.getNombreReceta(), nuevaReceta);
 
-    }
-    public List<Receta> listadoRecetasOrdenadasAlfabeticamente() throws RecetaException{
-       if (recetas.isEmpty()){
-           throw new RecetaException("No hay recetas");
-       }
-        return recetas.values().stream().sorted().toList();
-
+        recetas.put(nuevaReceta.getNombre(), nuevaReceta);
     }
 
-    public List <Receta> listadoRecetasConIngredienteOrdenadasPorTiempoPreparacion(String ingrediente) throws  RecetaException{
-
-        Stream <Receta>  ListaRecetas = recetas.values().stream().filter(receta -> receta.necesitaIngrediente(ingrediente));
-        if (ListaRecetas.findAny().isEmpty()) {
-            throw new RecetaException("No hay recetas con ee ingredientes");
+    public List<Receta> listadoRecetasOrdenadasAlfabeticamente() throws RecetaException {
+        if (recetas.isEmpty()){
+            throw new RecetaException("No hay recetas");
         }
-        ListaRecetas.sort((a,b)-> a.getTiempoPreparacion() - b.getTiempoPreparacion());
-        return ListaRecetas;
+
+        return recetas.values().stream().sorted().toList();
+    }
+    public List<Receta> listadoRecetasConIngredienteOrdenadasPorTiempoPreparacion(String ingrediente) throws RecetaException {
+        List <Receta> listaRecetas = recetas.values().stream().filter(r -> r.necesitaIngrediente(ingrediente)).toList();
+
+        if (listaRecetas.isEmpty()){
+            throw new RecetaException("No hay recetas con ese ingrediente");
+        }
+
+        listaRecetas.sort((r1 , r2) -> r1.getTiempoPreparacion() - r2.getTiempoPreparacion());
+
+        return listaRecetas;
     }
 }

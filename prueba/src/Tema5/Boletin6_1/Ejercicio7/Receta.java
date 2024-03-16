@@ -2,72 +2,81 @@ package Tema5.Boletin6_1.Ejercicio7;
 
 import jdk.incubator.vector.VectorOperators;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
-public class Receta {
-    private String nombreReceta;
-
-    public String getNombreReceta() {
-        return nombreReceta;
-    }
-
+public class Receta implements Comparable<Receta> {
+    private String nombre;
     private int tiempoPreparacion;
-    HashSet<Ingrediente> ingredientes;
+    Set<Ingrediente> ingredientes;
     List<String> pasos;
 
-    public Receta(String nombreReceta, int tiempoPreparacion) {
-        this.nombreReceta = nombreReceta;
+    public Receta(String nombre, int tiempoPreparacion) {
+        this.nombre = nombre;
         this.tiempoPreparacion = tiempoPreparacion;
         this.ingredientes = new HashSet<>();
         this.pasos = new LinkedList<>();
     }
 
-    public boolean necesitaIngrediente(String nombreIngrediente){
-      return   ingredientes.stream().anyMatch(i -> i.getNombre().equals(nombreIngrediente));
-    }
-
-    public void anadirIgredientes(Ingrediente ingredienteNuevo){
-        if (ingredientes.contains(ingredienteNuevo)) {
-            Iterator<Ingrediente> it = ingredientes.iterator();
-            Boolean encontrado = false;
-            while (it.hasNext() && !encontrado){
-                Ingrediente i = it.next();
-                if (ingredienteNuevo.getNombre().equals(i.getNombre())){
-                    i.addCantidad(ingredienteNuevo.getCantidad());
-                    encontrado = true;
-                }
-
-            }
-          if (!encontrado){
-              ingredientes.add(ingredienteNuevo);
-          }
-        }
-    }
-    public void borrarIngredientes (Ingrediente ingredienteABorrar) throws RecetaException{
-        if (ingredientes.contains(ingredienteABorrar)){
-            throw new RecetaException("La receta no contiene ese ingrediente");
-        }
-        pasos.removeIf(pasos -> pasos.contains(ingredienteABorrar.getNombre()));
-    }
-
-    public void  anadirPasoDetrasDe(String pasoNueva, String pasoExistente) throws RecetaException{
-        int posPasoExistente= pasos.indexOf(pasoExistente);
-
-        if (posPasoExistente == -1){
-            throw new RecetaException("La receta no contiene ese paso");
-        }
-        pasos.add(posPasoExistente + 1, pasoNueva);
+    public String getNombre() {
+        return nombre;
     }
 
     public int getTiempoPreparacion() {
         return tiempoPreparacion;
     }
 
-    public int compareTo(Receta otra){
-        return  this.nombreReceta.compareTo(otra.nombreReceta);
+    public boolean necesitaIngrediente(String nombreIngrediente){
+
+        return ingredientes.stream().anyMatch(i -> i.getNombre().equals(nombreIngrediente));
+    }
+
+    public void annadirIngrediente(Ingrediente ingredienteNuevo){
+        boolean encontrado = false;
+        Iterator<Ingrediente> it = ingredientes.iterator();
+
+        while (it.hasNext()){
+            Ingrediente i = it.next();
+
+            if (ingredienteNuevo.getNombre().equals(i.getNombre())){
+                i.addCantidad(ingredienteNuevo.getCantidad());
+                encontrado = true;
+            }
+        }
+        if (!encontrado){
+            ingredientes.add(ingredienteNuevo);
+        }
+    }
+
+    public void borrarIngrediente(Ingrediente ingredienteABorrar) throws RecetaException {
+        if (!ingredientes.remove(ingredienteABorrar)){
+            throw new RecetaException("El ingrediente no existe en la receta");
+        }
+
+        pasos.removeIf(paso -> paso.contains(ingredienteABorrar.getNombre()));
+    }
+
+    public void annadirPasoDetrasDe(String pasoNuevo, String pasoExistente) throws RecetaException {
+        int posPasoExistente = pasos.indexOf(pasoExistente);
+
+        if (posPasoExistente == -1){
+            throw new RecetaException("La receta no contiene ese paso");
+        }
+
+        pasos.add(posPasoExistente + 1, pasoNuevo);
+    }
+
+    public boolean contieneIngrediente(String ingrediente) {
+        for (Ingrediente i : ingredientes) {
+            if (i.getNombre().equals(ingrediente)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int compareTo(Receta o) {
+        return this.nombre.compareTo(o.nombre);
     }
 }

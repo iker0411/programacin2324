@@ -1,29 +1,31 @@
 package Tema5.EjercicioComplementarioColecciones.Ejercicioo2;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Hospital {
 
-    LinkedList<Paciente> pacientes;
+    List<Paciente> pacientes;
 
     public Hospital() {
         this.pacientes = new LinkedList<>();
     }
 
     public void anadirPaciente(Paciente paciente){
+        Iterator<Paciente> iterator = pacientes.iterator();
         int posicion = 0;
-        boolean encontrado = false;
-        Integer<Paciente> pacienteIterator = pacientes.iterator();
-        while (pacienteIterator.hasNext() && !encontrado){
+        boolean posEncontrada = false;
 
-            Paciente paciente1 = pacienteIterator.next();
-            if(paciente.compareTo(paciente1) < 0){
-                encontrado = true;
-            }else {
+        while (iterator.hasNext() && !posEncontrada){
+            Paciente paciente1 = iterator.next();
+            if (paciente.compareTo(paciente1) < 0){
+                posEncontrada = true;
+            }else{
                 posicion++;
             }
-        }
 
+        }
     }
 
 }
