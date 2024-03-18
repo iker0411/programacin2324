@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 public class Paciente implements Comparable<Paciente> {
     public static final int MIN_PRIORIDAD = 5;
-
     public static final int MAX_PRIORIDAD = 1;
 
     private String dni;
@@ -25,6 +24,10 @@ public class Paciente implements Comparable<Paciente> {
 
     public int getPrioridad() {
         return prioridad;
+    }
+
+    public int getEdad() {
+        return edad;
     }
 
     public void setPrioridad(int prioridad) throws HospitalException {
