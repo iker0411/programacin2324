@@ -1,6 +1,6 @@
 package Tema5.Boletin6_1.Ejercicio7;
 
-import jdk.incubator.vector.VectorOperators;
+
 
 import java.util.*;
 import java.util.stream.Stream;
