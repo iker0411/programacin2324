@@ -44,7 +44,7 @@ public class Mazo {
     public List<Cromo> cromosDeUnEquipo(String nombreEquipo){
       return mazo.keySet().stream().filter(cromo -> cromo.getEquipo().equals(nombreEquipo)).toList();
     }
-    public double alturaMedia(String equipo){
+    public double alturaMedia(String equipo) throws MazoException {
        return cromosDeUnEquipo(equipo).stream().filter(cromo -> cromo instanceof Jugador).mapToInt(cromo -> ((Jugador)cromo).getAltura()).average().orElseThrow(()->new MazoException("No hay jugadores de ese equipo"));
 
     }
