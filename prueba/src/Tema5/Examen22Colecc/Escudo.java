@@ -1,24 +1,36 @@
 package Tema5.Examen22Colecc;
 
 public class Escudo extends Cromo{
-    private String nombre;
-    private int annoFuncdacion;
-    private int numjugadores;
+    private String equipo;
+    private int annoFundacion;
+    private int numJugadores;
 
-    public Escudo(String id) {
+    public Escudo(String id, String equipo, int annoFunndacion, int numJugadores) {
         super(id);
+        this.equipo = equipo;
+        this.annoFundacion = annoFunndacion;
+        this.numJugadores = numJugadores;
+    }
+
+    public String getEquipo() {
+        return getNombre();
     }
 
     @Override
-    public String getEquipo() {
-        return nombre;
+    public String getNombre() {
+        return equipo;
     }
 
-    public Escudo(String id, String nombre, int annoFuncdacion, int numjugadores) {
-        super(id);
-        this.nombre = nombre;
-        this.annoFuncdacion = annoFuncdacion;
-        this.numjugadores = numjugadores;
+    public int getNumJugadores() {
+        return numJugadores;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Escudo: ").append(equipo)
+                .append("\n  · Fundación: ").append(annoFundacion)
+                .append("\n  · Tamaño del equipo: ").append(numJugadores);
+        return sb.toString();
     }
 
 }
