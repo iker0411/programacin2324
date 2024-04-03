@@ -41,16 +41,22 @@ public class NetPlease {
 	}
 	
 	public void borrarPeliculaDeUnTema( String tema, String titulo) throws NetPleaseException{
-
-	
-		
+			if (!mapPeliculas.containsKey(tema)){
+				throw new NetPleaseException("No existe ese tema");
+			}
+			if (!mapPeliculas.get(tema).borrar(titulo)){
+				throw new NetPleaseException("No existe la pelicula");
+			}
 	}
 	
 	
 	
 	public String temaDePelicula( String titulo) throws NetPleaseException {
-		
-		
+		for (String tema : mapPeliculas.keySet()){
+			if (mapPeliculas.get(tema).buscarPeliculaPorTitulo(titulo) != null){
+				return tema;
+			}
+		}
 		return null;
 	}
 	

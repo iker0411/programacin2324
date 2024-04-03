@@ -23,11 +23,15 @@ public class Pelicula {
 	public void annadirActor(String actor) {
 		actores.add(actor);
 	}
+
+	public boolean intervieneActor(String actor){
+		return actores.contains(actor);
+	}
 	
 	
 
 	public double mediaDeOpiniones() {
-		return 0;
+		return opiniones.stream().mapToInt(a -> a.getValoracion()).average().orElse(0);
 	}
 
 	public String getTitulo() {

@@ -31,41 +31,53 @@ public class PeliculasDeUnTema {
 	
 	public void borrarLasPeliculasDeUnAnno(int anno) throws NetPleaseException {
 		Iterator<Pelicula> itP = listaPeliculasDeUnTema.iterator();
-		boolean eliminado //Seguimos el miercoles
+		boolean eliminado = false;
 		while (itP.hasNext()){
 			Pelicula p = itP.next();
 			if (p.getAnnoEstreno() == anno){
 				itP.remove();
+				eliminado = true;
 			}
 
 		}
+		//
+		if (!eliminado){
+			throw new NetPleaseException("No hay pelicula para ese año");
+		}
+		/*if (!listaPeliculasDeUnTema.removeIf( a -> a.getAnnoEstreno() == anno)){
+			throw new NetPleaseException("No hay pelicula para ese año");
+		}*/
 	}
 	
 	public void annadirOpinionAPelicula(String tituloPelicula, Opinion opinion) throws NetPleaseException {
-		
-		
-		
+		Pelicula p = buscarPeliculaPorTitulo(tituloPelicula);
+		if (p == null){
+			throw new NetPleaseException("La pelicula no existe");
+		}
+		p.annadirOpinion(opinion);
 	}
 	
 	public List<Pelicula> listadoDePeliculasOrdenadasPorMediaDeOpiniones() {
-		return null;
-		
+		listaPeliculasDeUnTema.sort((a,b) -> Double.compare(b.mediaDeOpiniones(), a.mediaDeOpiniones()));
+		return listaPeliculasDeUnTema;
 	}
 	
 	
 	public List<Pelicula> listaPeliculasDondeIntervieneUnActor(String actor) {
-		
-		return null;
+		return listaPeliculasDeUnTema.stream().filter(p -> p.intervieneActor(actor)).toList();
 	}
 	
 	public Pelicula buscarPeliculaPorTitulo(String titulo) {
-		
+		for (Pelicula p : listaPeliculasDeUnTema){
+			if (titulo.equals(p.getTitulo())) {
+				return p;
+			}
+		}
 		return null;
 	}
 	
 	public boolean borrar(String titulo) {
-		return false;
-	
+		return listaPeliculasDeUnTema.removeIf(a -> a.getTitulo().equals(titulo));
 	}
 
 	@Override
