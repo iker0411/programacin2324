@@ -4,7 +4,7 @@ import java.io.*;
 
 public class main {
     public static void main(String[] args) {
-        File archivoNuevo = new File(".\\src\\Tema6\\Boletin7_1\\Ejercicio1\\FicheroNuevo.txt");
+        File archivoNuevo = new File(".\\prueba\\src\\Tema6\\Boletin7_1\\Ejercicio1\\FicheroNuevo.txt");
         try (BufferedReader br = new BufferedReader(new FileReader(archivoNuevo))) {
            String lineas;
            StringBuilder acum = new StringBuilder();
