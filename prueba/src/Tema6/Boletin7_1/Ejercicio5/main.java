@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.stream.Stream;
 
 public class main {
     public static void main(String[] args) {
@@ -142,8 +143,10 @@ public class main {
         String nombre = MIEntradaSalida2_0.leerCadena("Elija el nombre del directorio");
         Path path = Paths.get("./prueba/src/Tema6/Boletin7_1/" + nombre);
 
-        if (Files.exists(path)&& Files.isDirectory(path)) {
-            Files.list(path).filter(Files::isRegularFile).forEach(System.out::println);
+        if (Files.exists(path) && Files.isDirectory(path)) {
+            try(Stream<Path> p = Files.list(path)) {
+               p.filter(Files::isRegularFile).forEach(System.out::println);
+            }
         }else {
             System.out.println("El nombre del directorio no existe");
         }
