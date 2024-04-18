@@ -25,10 +25,10 @@ public class main {
                     listarPorExtension();
                     break;
                 case 3:
-
+                    buscarPorArchivos();
                     break;
                 case 4:
-
+                    buscarPorRecursivo();
                     break;
                 case 5:
 
@@ -76,6 +76,55 @@ public class main {
                             throw new RuntimeException(e);
                         }
                     });
+        } catch (IOException e) {
+            System.out.println("Ocurrio un error al acceder al fichero");
+        }
+    }
+
+    //IO
+    public static void buscarPorArchivos() {
+        String nombreArchivos = MIEntradaSalida2_0.leerCadena("Escribe el nombre del archivo a buscar");
+        File[] archivos = directorio.listFiles(((dir, name) -> name.equals(nombreArchivos)));
+        for (File archivo : archivos) {
+            if (archivo.isDirectory()) {
+                System.out.println(archivo.getAbsolutePath() + " -dir");
+            } else {
+                System.out.println(archivo.getAbsolutePath() + " - " + archivo.length() / 1024 + "KB");
+            }
+
+        }
+    }
+
+    //NIO
+    public static void buscarPorRecursivo() {
+        String nombreArchivos = MIEntradaSalida2_0.leerCadena("Escribe el nombre del archivo a buscar");
+        Path dir = directorio.toPath();
+        buscarFicheroCarpeta(nombreArchivos, dir);
+    }
+
+    public static void buscarFicheroCarpeta(String nombre, Path directorio) {
+        try (Stream<Path> ficheros = Files.list(directorio)) {
+            ficheros.sorted((a,b) -> {
+                if (Files.isRegularFile(a) && Files.isDirectory(b)) {
+                    return -1;
+                } else if (Files.isRegularFile(b) && Files.isDirectory(a)) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            }).forEach(a-> {
+                if (Files.isDirectory(a)) {
+                    buscarFicheroCarpeta(nombre, a);
+                } else {
+                    if (a.endsWith(Paths.get(nombre))) {
+                        try {
+                            System.out.println(a.toAbsolutePath() + " - " + Files.size(a) / 1024 + "KB");
+                        } catch (IOException e) {
+                            System.out.println("Ocurrio un error al acceder al fichero");
+                        }
+                    }
+                }
+            });
         } catch (IOException e) {
             System.out.println("Ocurrio un error al acceder al fichero");
         }
