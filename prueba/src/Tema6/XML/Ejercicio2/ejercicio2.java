@@ -1,4 +1,4 @@
-package Tema6.XML.Ejercicio1;
+package Tema6.XML.Ejercicio2;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -9,14 +9,14 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.sql.SQLOutput;
 
-public class ejercicio1 {
+
+public class ejercicio2 {
     public static void main(String[] args) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse("./prueba/src/Tema6/XML/Ejercicio1/web1.html");
+            Document doc = db.parse("./prueba/src/Tema6/XML/Ejercicio2/web1.html");
 
             Element raiz = doc.getDocumentElement();
 
@@ -50,7 +50,28 @@ public class ejercicio1 {
                     String titular = element.getElementsByTagName("h2").item(0).getTextContent();
                     System.out.println("Este es el titular de la noticia: " + titular);
                     String textoALT = ((Element) element.getElementsByTagName("img").item(0)).getAttribute("alt");
-                    System.out.println("Este es el texto alternativo de la imagen: " + textoALT);
+                    System.out.println("Este es el texto alternativo de la imagen: " + textoALT + "\n");
+                }
+            }
+            NodeList todosLosDivMenu = doc.getElementsByTagName("div");
+            for (int i = 0; i < todosLosDivMenu.getLength(); i++){
+                Element element = (Element) todosLosDivMenu.item(i);
+                if (element.getAttribute("id").equals("menu-principal")){
+                    NodeList liElements = element.getElementsByTagName("li");
+                    for (int j = 0; j < liElements.getLength(); j++) {
+                        System.out.println("Esta son las opciones: " + liElements.item(j).getTextContent() + "\n");
+                    }
+                }
+            }
+
+            NodeList todosLosDiv2 = doc.getElementsByTagName("div");
+            for (int i = 0; i < todosLosDiv2.getLength(); i++){
+                Element element = (Element) todosLosDiv2.item(i);
+                if (element.getAttribute("class").contains("noticia")){
+                    String titular = element.getElementsByTagName("h2").item(0).getTextContent();
+                    System.out.println("Este es el titular de la noticia: " + titular);
+                    String textParrafo = element.getElementsByTagName("p").item(0).getTextContent();
+                    System.out.println("Este es el texto alternativo de la noticia: " + textParrafo + "\n");
                 }
             }
 
