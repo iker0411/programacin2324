@@ -13,72 +13,141 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Ejerc2 {
+    private static DocumentBuilder db;
+    private static Document doc;
+
     public static void main(String[] args) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        try {
+            db = dbf.newDocumentBuilder();
+            doc = db.parse("./src/Ejer2/simpsons.xml");
+        } catch (IllegalArgumentException e) {
+            System.out.println("No se reconoce el fichero asignado\n" + e.getMessage());
+        } catch (ParserConfigurationException e) {
+            System.out.println("Error de configuración del parser\n" + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error de lectura del archivo\n" + e.getMessage());
+        } catch (SAXException e) {
+            System.out.println("Error de SAX del parser\n" + e.getMessage());
+        }
 
-        try{
-            DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse("./src/ExamenFicheros/Ejercicio2.xml");
-            NodeList fechas = doc.getElementsByTagName("fecha_emision");
+        //APARTADO UNO
+        int anio = 1992;
+        capitulosPosterioresAnio(anio);
 
-            for (int i = 0; i < fechas.getLength(); i++){
-                Element fecha = (Element) fechas.item(i);
-                int anho = Integer.parseInt(fecha.getTextContent().substring(fecha.getTextContent().length() - 4));
+        //APARTADO DOS
+        int minPalabras = 30;
+        copyCapitulosMasPalabras(minPalabras);
 
-                if (anho > 1992){
-                    System.out.println(((Element) fecha.getParentNode()).getElementsByTagName("nombre").item(0).getTextContent());
-                    System.out.println(fecha.getTextContent());
-                }
+        //APARTADO TRES
+        try {
+            doc = db.parse("./src/Ejer2/simpsons.xml");
+        } catch (IllegalArgumentException e) {
+            System.out.println("No se reconoce el fichero asignado\n" + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error de lectura del archivo\n" + e.getMessage());
+        } catch (SAXException e) {
+            System.out.println("Error de SAX del parser\n" + e.getMessage());
+        }
+        copySimpsonsProtasResaltados();
+    }
+
+    private static void capitulosPosterioresAnio(final int anio) {
+        NodeList capitulos = doc.getElementsByTagName("capitulo");
+
+        boolean hayCapitulos = false;
+        for (int i = 0; i < capitulos.getLength(); i++) {
+            Element capitulo = (Element) capitulos.item(i);
+            String fecha = capitulo.getElementsByTagName("fecha_emision").item(0).getTextContent();
+            if (anio < Integer.parseInt(fecha.substring(fecha.length() - 4))) {
+                System.out.printf("""
+                                
+                                Titulo: %s
+                                Emisión: %s""",
+                        capitulo.getElementsByTagName("nombre").item(0).getTextContent(),
+                        fecha);
+                hayCapitulos = true;
             }
+        }
+        if (!hayCapitulos) {
+            System.out.println("No hay capitulos posteriores al año " + anio);
+        } else {
+            System.out.println();
+        }
+    }
 
-            NodeList capitulos = doc.getElementsByTagName("capitulo");
-            for (int i = 0; i < capitulos.getLength(); i++){
-                Element capitulo = (Element) capitulos.item(i);
+    private static void copyCapitulosMasPalabras(final int MIN_PALABRAS) {
+        File outFile = new File("./src/Ejer2/simpsonsB.xml");
+        Pattern pt = Pattern.compile("\\b(\\p{L}+)\\b", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
 
-                String sinopsis = capitulo.getElementsByTagName("sinopsis").item(0).getTextContent();
+        NodeList capitulos = doc.getElementsByTagName("capitulo");
+        for (int i = 0; i < capitulos.getLength(); i++) {
+            long palabras = 0;
+            Element capitulo = (Element) capitulos.item(i);
+            String sinopsis = capitulo.getElementsByTagName("sinopsis").item(0).getTextContent();
 
+            Matcher m = pt.matcher(sinopsis);
+            palabras = m.results().count();
+            /*while (m.find()) {
+                palabras++;
+            }*/
 
+            if (palabras <= MIN_PALABRAS) {
+                //if (m.groupCount() <= MIN_PALABRAS) {
+                capitulo.getParentNode().removeChild(capitulo);
+                i--;
             }
+        }
 
-            File f = new File("./src/ExamenFicheros/Ejercicio2parte2.xml");
-
-            // 2º Creamos una nueva instancia del transformador a través de la fábrica de
-            // transformadores.
-
+        try {
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
-
-            // 3º Establecemos algunas opciones de salida, como por ejemplo, la codificación
-            // de salida.
-
-            //transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-
             transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
-            // 4º Creamos el StreamResult, que intermediará entre el transformador y el
-            // archivo de destino.
-
-            StreamResult result = new StreamResult(f);
-
-            // 5º Creamos el DOMSource, que intermediará entre el transformador y el árbol
-            // DOM.
+            StreamResult streamResult = new StreamResult(outFile);
 
             DOMSource source = new DOMSource(doc);
 
-            // 6º Realizamos la transformación.
-
-            transformer.transform(source, result);
-        } catch (ParserConfigurationException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (SAXException e) {
-            throw new RuntimeException(e);
+            transformer.transform(source, streamResult);
+            System.out.println("\nFichero 'simpsonsB.xml' creado con exito");
         } catch (TransformerConfigurationException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error de configuración del transformer\n" + e.getMessage());
         } catch (TransformerException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error al transformar\n" + e.getMessage());
+        }
+    }
+
+    private static void copySimpsonsProtasResaltados() {
+        File outFile = new File("./src/Ejer2/simpsonsC.xml");
+        Pattern pt = Pattern.compile("\\b(marge|lisa|bart|homer|maggie)\\b", Pattern.CASE_INSENSITIVE);
+        NodeList sinopsis = doc.getElementsByTagName("sinopsis");
+
+        for (int i = 0; i < sinopsis.getLength(); i++) {
+            Element sinopsisItem = (Element) sinopsis.item(i);
+            String contenido = sinopsisItem.getTextContent();
+            contenido = pt.matcher(contenido).replaceAll("**$1**");
+            sinopsisItem.setTextContent(contenido);
+        }
+
+        try {
+            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+
+            StreamResult streamResult = new StreamResult(outFile);
+
+            DOMSource source = new DOMSource(doc);
+
+            transformer.transform(source, streamResult);
+            System.out.println("\nFichero 'simpsonsC.xml' creado con exito");
+        } catch (TransformerConfigurationException e) {
+            System.out.println("Error de configuración del transformer\n" + e.getMessage());
+        } catch (TransformerException e) {
+            System.out.println("Error al transformar\n" + e.getMessage());
         }
     }
 }

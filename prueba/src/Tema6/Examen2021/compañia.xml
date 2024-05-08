@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<compañias>
+    <Compañia nombre="American Airways"/>
+    <Compañia nombre="North American Airlines"/>
+    <Compañia nombre="European Airways"/>
+    <Compañia nombre="South American Airways"/>
+    <Compañia nombre="Asia Air"/>
+    <Compañia nombre="Aerolíneas Europeas"/>
+    <Compañia nombre="Oceanic Airlines"/>
+    <Compañia nombre="African Airways"/>
+</compañias>
