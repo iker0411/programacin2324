@@ -93,4 +93,31 @@ public class MIEntradaSalida2_0 {
 
         return primo;
     }
+    public static String leerOpciones(String mensaje, String[] opciones) {
+        int opcionElegida = 0;
+
+        do {
+            for (int i = 0; i < opciones.length; i++) {
+                System.out.printf("%d = %s \n", i + 1, opciones[i]);
+            }
+            System.out.println(mensaje);
+            opcionElegida = Integer.parseInt(tc.nextLine());
+        } while (opcionElegida <= 0 && opcionElegida > opciones.length);
+
+        return opciones[opcionElegida - 1];
+    }
+
+    public static <T> T leerEnum(String mensaje, T[] opciones){
+        int opcionElegida = 0;
+
+        do {
+            for (int i = 0; i < opciones.length; i++) {
+                System.out.printf("%d = %s \n", i + 1, opciones[i]);
+            }
+            System.out.println(mensaje);
+            opcionElegida = Integer.parseInt(tc.nextLine());
+        } while (opcionElegida <= 0 || opcionElegida > opciones.length);
+
+        return opciones[opcionElegida - 1];
+    }
 }

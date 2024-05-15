@@ -13,13 +13,22 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.w3c.dom.*;
+
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class ejerc3 {
     private static Document doc;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws XmlException {
         String rutaXml = "./src/aeropuerto.xml";
-        doc = AyudasXml.parsearRuta(rutaXml);
+        try {
+            doc = AyudasXml.parsearRuta(rutaXml);
+        } catch (XmlException e) {
+            throw new RuntimeException(e);
+        }
 
         if (doc == null) {
             System.out.println("No se ha podido parsear la ruta del documento");
@@ -28,9 +37,14 @@ public class ejerc3 {
         }
     }
 
-    private static void nombresAerolineasXml() {
+    private static void nombresAerolineasXml() throws XmlException {
         String outRuta = "./src/Ejer3/aerolineas.xml";
-        Document newDoc = AyudasXml.crearDocumento();
+        Document newDoc = null;
+        try {
+            newDoc = AyudasXml.crearDocumento();
+        } catch (XmlException e) {
+            throw new RuntimeException(e);
+        }
         if (newDoc == null) {
             System.out.println("No se ha podido crear el documento");
             return;
