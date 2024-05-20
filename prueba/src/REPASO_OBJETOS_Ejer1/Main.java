@@ -1,5 +1,6 @@
 package REPASO_OBJETOS_Ejer1;
 
+import Tema4.EntradaSalida.Lectora;
 import Tema5.Practica_No_Evaluable_Recetas_de_Cocina.MIEntradaSalida2_0;
 
 import java.util.ArrayList;
@@ -8,13 +9,18 @@ import java.util.List;
 public class Main {
     private static  Tienda tienda = new Tienda("AnimalCrossingShops");
     public static void main(String[] args) {
-        addCliente();
         addMascota();
+        addMascota();
+        addCliente();
+        addCompra();
+        devolucionMascota();
     }
     public static void addCliente (){
         tienda.anadirClientes(MIEntradaSalida2_0.leerCadena("Introduce el nombre del cliente"));
 
     }
+
+
 
     public static void addMascota (){
         String nombre = MIEntradaSalida2_0.leerCadena("Introduce el nombre de la mascota");
@@ -27,10 +33,19 @@ public class Main {
 
     public static void addCompra (){
         List<Cliente> clientes = tienda.getListaCliente();
-        Cliente c = MIEntradaSalida2_0.leerOpciones("Selecciona el cliente", clientes.stream().map());
-
+        List<Mascota> mascotas = tienda.getListaMascotaDisponible();
+        Cliente c = MIEntradaSalida2_0.leerEnum("Selecciona el cliente", clientes.toArray(Cliente[]::new));
+        Mascota m = MIEntradaSalida2_0.leerEnum("Selecciona la mascota", mascotas.toArray(Mascota[]::new));
+        tienda.comprarMascota(c, m);
     }
 
+    public static   void devolucionMascota(){
+        List<Cliente> clientes = tienda.getListaCliente();
+        Cliente c = MIEntradaSalida2_0.leerEnum("Selecciona el cliente", clientes.toArray(Cliente[]::new));
+        List<Compra> compras = tienda.listarComprasCliente(c);
+        Compra compra = MIEntradaSalida2_0.leerEnum("Selecciona la compra ", compras.toArray(Compra[]::new));
+
+    }
 
 
 }

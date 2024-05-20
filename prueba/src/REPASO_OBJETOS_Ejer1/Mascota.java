@@ -15,4 +15,32 @@ public class Mascota {
         this.nombre = nombre;
         this.especie = especie;
     }
+
+    public void setDisponible(Boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    public String getTipoMascota() {
+        return tipoMascota;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public Boolean getDisponible() {
+        return disponible;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public Especie getEspecie() {
+        return especie;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
