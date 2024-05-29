@@ -12,7 +12,7 @@ import ExamenPokemonRecuperacionHerencia.utils.UserDataCollector;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Pokemon[] pokemons = new Pokemon[6];
         for (int i = 0; i < pokemons.length; i++) {
             pokemons[i] = generateRandomPokemon();
@@ -43,7 +43,7 @@ public class Main {
             Iremos por turnos, dejando que el pokemon que ocupe la posición que le toca pueda seleccionar otro pokemon
             para atacar
              */
-            for (int i = 0; i < pokemons.length; i++) {
+          /*  for (int i = 0; i < pokemons.length; i++) {
                 Pokemon pokemon = pokemons[i];
 
                 if (pokemon.estaVivo()) {
@@ -119,7 +119,7 @@ public class Main {
      *
      * @return Pokemon generado
      */
-    private static Pokemon generateRandomPokemon(){
+ /*   private static Pokemon generateRandomPokemon(){
         int random = (int) (Math.random() * 5);
         boolean added = false;
 
@@ -155,7 +155,7 @@ public class Main {
      * Genera un nombre de pokemon aleatorio entre 50 nombres predefinidos
      * @return Nombre de pokemon aleatorio
      */
-    private static String generaNombrePokemonAleatorio() {
+   /* private static String generaNombrePokemonAleatorio() {
         String[] nombres = {"Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Jigglypuff", "Meowth", "Psyduck", "Vulpix", "Gengar", "Gyarados", "Lapras", "Eevee", "Snorlax", "Articuno", "Zapdos", "Moltres", "Mewtwo", "Mew", "Chikorita", "Cyndaquil", "Totodile", "Togepi", "Ampharos", "Bellossom", "Marill", "Sudowoodo", "Unown", "Wobbuffet", "Girafarig", "Pineco", "Dunsparce", "Gligar", "Steelix", "Snubbull", "Qwilfish", "Scizor", "Shuckle", "Heracross", "Sneasel", "Teddiursa", "Ursaring", "Slugma", "Swinub", "Corsola", "Remoraid", "Delibird", "Mantine", "Skarmory", "Houndour", "Phanpy"};
         return nombres[(int) (Math.random() * nombres.length)];
     }
@@ -168,5 +168,5 @@ public class Main {
 
             default -> null;
         };
-    }
+    }*/
 }
