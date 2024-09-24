@@ -34,7 +34,7 @@ public class eje2 {
         try (BufferedReader br = new BufferedReader(new FileReader("prueba/src/RecuperacionFicheros/ej2.txt"))){
             String linea;
             Pattern lineaValida = Pattern.compile(".*[;:]$");
-            Pattern matriculaValida = Pattern.compile("(\\d{4}[B-Z&&[^EIOU]]{3})", Pattern.CASE_INSENSITIVE);
+            Pattern matriculaValida = Pattern.compile("", Pattern.CASE_INSENSITIVE);
 
             while ((linea = br.readLine()) != null) {
                 Matcher mLineaValida = lineaValida.matcher(linea);

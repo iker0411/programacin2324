@@ -39,7 +39,7 @@ public class Main {
         tienda.comprarMascota(c, m);
     }
 
-    public static   void devolucionMascota(){
+    public static void devolucionMascota(){
         List<Cliente> clientes = tienda.getListaCliente();
         Cliente c = MIEntradaSalida2_0.leerEnum("Selecciona el cliente", clientes.toArray(Cliente[]::new));
         List<Compra> compras = tienda.listarComprasCliente(c);
